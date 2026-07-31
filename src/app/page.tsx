@@ -6,6 +6,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AreasSection } from "@/components/sections/AreasSection";
 import { HomeFAQSection } from "@/components/sections/HomeFAQSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { GalleryPreview } from "@/components/sections/GalleryPreview";
 
 export const metadata: Metadata = {
   title: "Mobile Car Wash, Valet & Detailing Urmston | Latin King Detailing",
@@ -20,6 +21,7 @@ export default function HomePage() {
       <HeroSection />
       <StatsSection />
       <ServicesGrid limit={6} />
+      <GalleryPreview />
       <TestimonialsSection />
       <AreasSection />
       <HomeFAQSection />

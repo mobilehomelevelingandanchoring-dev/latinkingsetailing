@@ -156,12 +156,12 @@ export function HeroSection() {
             />
             <BeforeAfterSlider
               before={{
-                src: "/images/before-1.jpg",
-                alt: "Car before professional detailing — dull, dirty paintwork",
+                src: "/images/interior/interior-urmston-latin-king-detailing-03-1280w.webp",
+                alt: "Car accelerator pedal before interior deep clean — heavy grime and salt deposits",
               }}
               after={{
-                src: "/images/after-1.jpg",
-                alt: "Car after ceramic coating by Latin King Detailing — mirror-shine finish",
+                src: "/images/interior/interior-urmston-latin-king-detailing-01-1280w.webp",
+                alt: "Car accelerator pedal after interior deep clean by Latin King Detailing — restored to like-new",
               }}
               className="relative aspect-[4/3] w-full"
             />

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { InstagramIcon, TikTokIcon } from "@/components/ui/SocialIcons";
 import { BUSINESS } from "@/lib/business";
 import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
 import { CTASection } from "@/components/sections/CTASection";
+import { SITE_IMAGES } from "@/lib/images";
+
+const GALLERY_IMAGES = SITE_IMAGES.filter((img) => img.service === "gallery");
 
 export const metadata: Metadata = {
   title: "Before & After Gallery — Car Detailing Results | Latin King Detailing",
@@ -82,6 +86,34 @@ export default function GalleryPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Photo grid — all client vehicles */}
+          <div className="mb-20">
+            <p className="eyebrow">The fleet</p>
+            <h2 className="mb-3">
+              Cars we&apos;ve{" "}
+              <span className="gradient-text-red">worked on</span>
+            </h2>
+            <p className="text-base mb-10" style={{ color: "rgba(255,255,255,0.55)", maxWidth: "52ch" }}>
+              Every vehicle below was detailed by Latin King Detailing across Urmston and Greater Manchester.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+              {GALLERY_IMAGES.map((img) => (
+                <div
+                  key={img.slug}
+                  className="relative aspect-square overflow-hidden rounded-xl group"
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Social proof / Instagram */}
