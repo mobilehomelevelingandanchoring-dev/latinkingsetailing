@@ -43,9 +43,37 @@ const BEFORE_AFTER_PAIRS = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...GALLERY_IMAGES.map((img) => ({
+      "@type": "ImageObject",
+      contentUrl: `https://latinkingdetailing.co.uk${img.src}`,
+      name: img.alt,
+      description: img.alt,
+      caption: img.alt,
+      contentLocation: {
+        "@type": "Place",
+        name: "Urmston, Greater Manchester, United Kingdom",
+      },
+      creator: {
+        "@type": "LocalBusiness",
+        name: "Latin King Detailing",
+        url: "https://latinkingdetailing.co.uk",
+      },
+      license: "https://latinkingdetailing.co.uk/",
+      acquireLicensePage: "https://latinkingdetailing.co.uk/contact",
+    })),
+  ],
+};
+
 export default function GalleryPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="section-pad pt-32 md:pt-40">
         <div className="section-container">
