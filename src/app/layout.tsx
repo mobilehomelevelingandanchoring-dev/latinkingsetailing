@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileCTABar } from "@/components/layout/MobileCTABar";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { BUSINESS } from "@/lib/business";
 import { buildLocalBusinessSchema } from "@/lib/schema";
 
@@ -102,6 +103,7 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <MobileCTABar />
+        <WhatsAppButton />
       </body>
     </html>
   );
