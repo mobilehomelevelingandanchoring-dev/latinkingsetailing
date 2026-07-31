@@ -1,0 +1,220 @@
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+import { createAdminClient } from "@/lib/supabase/server";
+import { logoutAdmin, updateBookingStatus } from "@/app/admin/actions";
+
+export const metadata = { title: "Bookings | Latin King Detailing Admin", robots: "noindex" };
+export const dynamic = "force-dynamic";
+
+const STATUS_COLOURS: Record<string, string> = {
+  new:       "rgba(196,30,58,0.85)",
+  contacted: "rgba(180,120,0,0.85)",
+  confirmed: "rgba(30,130,196,0.85)",
+  completed: "rgba(30,180,80,0.85)",
+  cancelled: "rgba(100,100,110,0.85)",
+};
+
+const ALL_STATUSES = ["new", "contacted", "confirmed", "completed", "cancelled"];
+
+export default async function AdminPage() {
+  // Auth check
+  const jar = await cookies();
+  if (jar.get("lkd_admin")?.value !== process.env.ADMIN_PASSWORD) {
+    redirect("/admin/login");
+  }
+
+  const db = createAdminClient();
+  const { data: bookings, error } = await db
+    .from("bookings")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  const counts = {
+    new:       bookings?.filter(b => b.status === "new").length ?? 0,
+    contacted: bookings?.filter(b => b.status === "contacted").length ?? 0,
+    confirmed: bookings?.filter(b => b.status === "confirmed").length ?? 0,
+    completed: bookings?.filter(b => b.status === "completed").length ?? 0,
+    cancelled: bookings?.filter(b => b.status === "cancelled").length ?? 0,
+  };
+
+  return (
+    <div style={{ minHeight: "100dvh", background: "var(--color-base-950)", padding: "2rem 1rem" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+
+        {/* Header */}
+        <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
+          <div>
+            <h1
+              style={{
+                fontFamily: "var(--font-barlow-condensed)",
+                fontWeight: 900,
+                fontSize: "clamp(1.75rem, 4vw, 2.5rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1,
+                marginBottom: "0.25rem",
+              }}
+            >
+              Bookings
+            </h1>
+            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.875rem" }}>
+              {bookings?.length ?? 0} total · {counts.new} new
+            </p>
+          </div>
+          <form action={logoutAdmin}>
+            <button
+              type="submit"
+              className="btn btn-secondary"
+              style={{ fontSize: "0.875rem", padding: "0.5rem 1.25rem" }}
+            >
+              Sign out
+            </button>
+          </form>
+        </div>
+
+        {/* Status summary chips */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {ALL_STATUSES.map(s => (
+            <span
+              key={s}
+              style={{
+                background: STATUS_COLOURS[s],
+                color: "#fff",
+                padding: "0.25rem 0.75rem",
+                borderRadius: "9999px",
+                fontSize: "0.8125rem",
+                fontWeight: 600,
+              }}
+            >
+              {s} — {counts[s as keyof typeof counts]}
+            </span>
+          ))}
+        </div>
+
+        {error && (
+          <p style={{ color: "var(--color-accent-400)", marginBottom: "1rem" }}>
+            Error loading bookings: {error.message}
+          </p>
+        )}
+
+        {/* Bookings table */}
+        {!bookings?.length ? (
+          <div
+            className="card p-12 text-center"
+            style={{ background: "var(--color-base-900)", color: "rgba(255,255,255,0.4)" }}
+          >
+            No bookings yet. They&apos;ll appear here when customers submit the form.
+          </div>
+        ) : (
+          <div className="flex flex-col gap-3">
+            {bookings.map(b => (
+              <div
+                key={b.id}
+                className="card p-5"
+                style={{
+                  background: "var(--color-base-900)",
+                  borderLeft: `3px solid ${STATUS_COLOURS[b.status] ?? "#444"}`,
+                }}
+              >
+                <div className="grid sm:grid-cols-[1fr_auto] gap-4 items-start">
+                  {/* Left: booking details */}
+                  <div className="flex flex-col gap-1.5">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span
+                        style={{
+                          fontFamily: "var(--font-barlow-condensed)",
+                          fontWeight: 800,
+                          fontSize: "1.1rem",
+                          color: "#fff",
+                        }}
+                      >
+                        {b.full_name}
+                      </span>
+                      <span
+                        style={{
+                          background: STATUS_COLOURS[b.status],
+                          color: "#fff",
+                          fontSize: "0.7rem",
+                          fontWeight: 700,
+                          padding: "0.15rem 0.55rem",
+                          borderRadius: "9999px",
+                          textTransform: "uppercase",
+                          letterSpacing: "0.06em",
+                        }}
+                      >
+                        {b.status}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-x-4 gap-y-1" style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.65)" }}>
+                      <a href={`tel:${b.phone}`} style={{ color: "var(--color-accent-400)", fontWeight: 600 }}>
+                        {b.phone}
+                      </a>
+                      {b.email && (
+                        <a href={`mailto:${b.email}`} style={{ color: "rgba(255,255,255,0.5)" }}>
+                          {b.email}
+                        </a>
+                      )}
+                    </div>
+
+                    <div className="flex flex-wrap gap-x-4 gap-y-1" style={{ fontSize: "0.8125rem", color: "rgba(255,255,255,0.5)" }}>
+                      <span>📍 {b.area ?? "—"}</span>
+                      <span>🔧 {b.service}</span>
+                      {b.vehicle && <span>🚗 {b.vehicle}</span>}
+                      {b.preferred_date && (
+                        <span>
+                          📅 {new Date(b.preferred_date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+                          {b.preferred_time ? ` · ${b.preferred_time}` : ""}
+                        </span>
+                      )}
+                    </div>
+
+                    {b.notes && (
+                      <p style={{ fontSize: "0.8125rem", color: "rgba(255,255,255,0.4)", marginTop: "0.25rem", fontStyle: "italic" }}>
+                        &ldquo;{b.notes}&rdquo;
+                      </p>
+                    )}
+
+                    <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.25)", marginTop: "0.25rem" }}>
+                      {new Date(b.created_at).toLocaleString("en-GB", {
+                        day: "numeric", month: "short", year: "numeric",
+                        hour: "2-digit", minute: "2-digit",
+                      })}
+                    </p>
+                  </div>
+
+                  {/* Right: status updater */}
+                  <form
+                    action={async (fd: FormData) => {
+                      "use server";
+                      await updateBookingStatus(fd.get("id") as string, fd.get("status") as string);
+                    }}
+                    className="flex flex-col gap-2 min-w-[140px]"
+                  >
+                    <input type="hidden" name="id" value={b.id} />
+                    <select
+                      name="status"
+                      defaultValue={b.status}
+                      className="form-input"
+                      style={{ fontSize: "0.8125rem", padding: "0.4rem 0.75rem", minHeight: "unset" }}
+                    >
+                      {ALL_STATUSES.map(s => (
+                        <option key={s} value={s}>{s}</option>
+                      ))}
+                    </select>
+                    <button
+                      type="submit"
+                      className="btn btn-secondary"
+                      style={{ fontSize: "0.8125rem", padding: "0.4rem 0.75rem", minHeight: "unset" }}
+                    >
+                      Update
+                    </button>
+                  </form>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

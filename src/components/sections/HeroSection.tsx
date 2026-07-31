@@ -14,7 +14,7 @@ const FADE_UP = {
 export function HeroSection() {
   return (
     <section
-      className="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden"
+      className="relative min-h-[100dvh] flex flex-col lg:justify-center overflow-hidden"
       style={{ background: "var(--color-base-950)" }}
       aria-label="Hero — Latin King Detailing"
     >
@@ -41,7 +41,7 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="section-container relative z-10 pt-28 pb-16 md:pt-36 md:pb-24">
+      <div className="section-container relative z-10 pt-28 pb-14 sm:pt-32 md:pt-36 lg:pt-28 lg:pb-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left — copy */}
           <motion.div
@@ -50,7 +50,7 @@ export function HeroSection() {
             variants={{ show: { transition: { staggerChildren: 0.1 } } }}
           >
             {/* Trust signals */}
-            <motion.div variants={FADE_UP} className="flex items-center gap-3 mb-6">
+            <motion.div variants={FADE_UP} className="flex flex-wrap items-center gap-2 mb-6">
               <div className="flex items-center gap-1.5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
@@ -65,7 +65,7 @@ export function HeroSection() {
                 5.0 — {BUSINESS.rating.ratingCount}+ reviews
               </span>
               <span
-                className="hidden sm:block text-xs px-2.5 py-1 rounded-full font-semibold"
+                className="text-xs px-2.5 py-1 rounded-full font-semibold"
                 style={{
                   background: "rgba(196,30,58,0.15)",
                   color: "var(--color-accent-400)",

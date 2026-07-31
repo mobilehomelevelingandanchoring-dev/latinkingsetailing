@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/ui/SocialIcons";
 import { BUSINESS } from "@/lib/business";
-import { QuoteForm } from "@/components/sections/QuoteForm";
+import { BookingForm } from "@/components/sections/BookingForm";
 
 export const metadata: Metadata = {
   title: "Get a Free Quote — Mobile Car Detailing in Manchester | Latin King Detailing",
@@ -118,7 +118,22 @@ export default function ContactPage() {
             </div>
 
             {/* Right: form */}
-            <QuoteForm />
+            <div className="card p-6 sm:p-8" style={{ background: "var(--color-base-900)" }}>
+              <h2
+                className="mb-1"
+                style={{
+                  fontFamily: "var(--font-barlow-condensed)",
+                  fontWeight: 800,
+                  fontSize: "clamp(1.5rem, 3vw, 2rem)",
+                }}
+              >
+                Request a free quote
+              </h2>
+              <p className="text-sm mb-6" style={{ color: "rgba(255,255,255,0.5)" }}>
+                No obligation — we&apos;ll call to confirm and quote before any work starts.
+              </p>
+              <BookingForm />
+            </div>
           </div>
         </div>
       </section>
