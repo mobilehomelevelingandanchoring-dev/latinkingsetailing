@@ -14,31 +14,29 @@ export async function submitBooking(
   // Time-based bot check — real humans take >2 s to fill a form
   const elapsed = Date.now() - loadedAt;
   if (elapsed < 2000) {
-    // Fake success — don't tip off bots
     return { ok: true, name: "", phone: "" };
   }
 
   const parsed = bookingSchema.safeParse(formData);
   if (!parsed.success) {
-    return { ok: false, error: "Validation failed. Please check your inputs." };
+    const firstError = parsed.error.issues[0]?.message ?? "Please check your inputs.";
+    return { ok: false, error: firstError };
   }
 
   const { _hp, ...data } = parsed.data;
 
-  // Honeypot check — bots fill hidden fields
   if (_hp && _hp.length > 0) {
     return { ok: true, name: "", phone: "" };
   }
 
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
 
   if (!url || !key) {
-    console.error("Supabase env vars not set");
+    console.error("[booking] Supabase env vars missing — URL:", !!url, "KEY:", !!key);
     return {
       ok: false,
-      error:
-        "Booking system is temporarily unavailable. Please call us directly.",
+      error: "Booking system unavailable — please call 07482 225323 directly.",
     };
   }
 
@@ -59,11 +57,10 @@ export async function submitBooking(
   });
 
   if (error) {
-    console.error("Supabase insert error:", error);
+    console.error("[booking] Supabase insert error:", error.code, error.message);
     return {
       ok: false,
-      error:
-        "Something went wrong saving your booking. Please call us directly.",
+      error: `Could not save your booking (${error.code ?? "unknown error"}) — please call 07482 225323.`,
     };
   }
 

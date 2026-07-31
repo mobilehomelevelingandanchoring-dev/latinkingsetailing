@@ -18,7 +18,7 @@ const ALL_STATUSES = ["new", "contacted", "confirmed", "completed", "cancelled"]
 
 export default async function AdminPage() {
   // Fail-safe auth: if env var missing OR cookie missing OR mismatch → login
-  const adminPass = process.env.ADMIN_PASSWORD;
+  const adminPass = process.env.ADMIN_PASSWORD?.trim() ?? "";
   const jar = await cookies();
   const cookieVal = jar.get("lkd_admin")?.value;
 

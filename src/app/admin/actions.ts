@@ -11,12 +11,13 @@ export async function loginAdmin(formData: FormData) {
   const password = formData.get("password") as string;
   const adminPass = process.env.ADMIN_PASSWORD;
 
-  if (!adminPass || password !== adminPass) {
+  const trimmedPass = adminPass?.trim() ?? "";
+  if (!trimmedPass || password.trim() !== trimmedPass) {
     redirect("/admin/login?error=1");
   }
 
   const jar = await cookies();
-  jar.set(COOKIE, adminPass, {
+  jar.set(COOKIE, trimmedPass, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
@@ -33,7 +34,7 @@ export async function logoutAdmin() {
 }
 
 export async function updateBookingStatus(formData: FormData) {
-  const adminPass = process.env.ADMIN_PASSWORD;
+  const adminPass = process.env.ADMIN_PASSWORD?.trim() ?? "";
   const jar = await cookies();
   const cookieVal = jar.get(COOKIE)?.value;
 
