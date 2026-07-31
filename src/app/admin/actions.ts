@@ -9,11 +9,14 @@ const MAX_AGE = 60 * 60 * 24 * 7; // 7 days
 
 export async function loginAdmin(formData: FormData) {
   const password = formData.get("password") as string;
-  if (password !== process.env.ADMIN_PASSWORD) {
+  const adminPass = process.env.ADMIN_PASSWORD;
+
+  if (!adminPass || password !== adminPass) {
     redirect("/admin/login?error=1");
   }
+
   const jar = await cookies();
-  jar.set(COOKIE, process.env.ADMIN_PASSWORD!, {
+  jar.set(COOKIE, adminPass, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
@@ -29,11 +32,20 @@ export async function logoutAdmin() {
   redirect("/admin/login");
 }
 
-export async function updateBookingStatus(id: string, status: string) {
+export async function updateBookingStatus(formData: FormData) {
+  const adminPass = process.env.ADMIN_PASSWORD;
   const jar = await cookies();
-  if (jar.get(COOKIE)?.value !== process.env.ADMIN_PASSWORD) {
-    throw new Error("Unauthorized");
+  const cookieVal = jar.get(COOKIE)?.value;
+
+  if (!adminPass || !cookieVal || cookieVal !== adminPass) {
+    redirect("/admin/login");
   }
+
+  const id     = formData.get("id") as string;
+  const status = formData.get("status") as string;
+
   const db = createAdminClient();
   await db.from("bookings").update({ status }).eq("id", id);
+
+  redirect("/admin");
 }
