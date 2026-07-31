@@ -14,22 +14,28 @@ export const metadata: Metadata = {
 
 const BEFORE_AFTER_PAIRS = [
   {
-    before: { src: "/images/before-1.jpg", alt: "Car paintwork before paint correction — covered in swirl marks" },
-    after: { src: "/images/after-1.jpg", alt: "Car paintwork after paint correction and ceramic coating — mirror gloss" },
-    service: "Paint Correction + Ceramic Coating",
-    vehicle: "BMW 3 Series",
-  },
-  {
-    before: { src: "/images/before-2.jpg", alt: "Car interior before deep clean — stained seats and carpet" },
-    after: { src: "/images/after-2.jpg", alt: "Car interior after deep clean — fresh, like new condition" },
+    before: {
+      src: "/images/interior/interior-urmston-latin-king-detailing-03-1280w.webp",
+      alt: "Car accelerator pedal before interior detailing — heavily soiled with ingrained salt deposits and grime",
+    },
+    after: {
+      src: "/images/interior/interior-urmston-latin-king-detailing-01-1280w.webp",
+      alt: "Car accelerator pedal after interior deep clean by Latin King Detailing — restored to like-new condition",
+    },
     service: "Interior Deep Clean",
-    vehicle: "VW Tiguan",
+    vehicle: "Audi TT",
   },
   {
-    before: { src: "/images/before-3.jpg", alt: "Black car exterior before detailing — contaminated, dull paint" },
-    after: { src: "/images/after-3.jpg", alt: "Black car exterior after full detail — deep gloss and reflection" },
-    service: "Full Exterior Detail",
-    vehicle: "Audi A4",
+    before: {
+      src: "/images/interior/interior-urmston-latin-king-detailing-04-1280w.webp",
+      alt: "Car footwell before deep cleaning by Latin King Detailing — contaminated floor mat with salt and dirt around pedals",
+    },
+    after: {
+      src: "/images/interior/interior-urmston-latin-king-detailing-02-1280w.webp",
+      alt: "Car footwell after interior deep clean by Latin King Detailing, Urmston — pristinely clean mats and polished pedals",
+    },
+    service: "Interior Deep Clean",
+    vehicle: "Audi",
   },
 ];
 
@@ -45,7 +51,7 @@ export default function GalleryPage() {
             <span className="gradient-text-red">transformations</span>
           </h1>
           <p className="text-lg mb-14" style={{ color: "rgba(255,255,255,0.62)", maxWidth: "55ch" }}>
-            Every result shown here is genuine work carried out by Latin King Detailing — no filters, no digital enhancement. Drag the sliders to see the full transformation.
+            Every result shown here is genuine work carried out by Latin King Detailing — real cars, real results, no filters or digital enhancement. Drag the sliders to see the full transformation.
           </p>
 
           {/* Before/after sliders */}

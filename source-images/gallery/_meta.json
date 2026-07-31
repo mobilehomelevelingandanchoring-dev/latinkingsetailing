@@ -1,0 +1,49 @@
+{
+  "profile": "gallery",
+  "images": {
+    "lotus-emeya-front.jpg":        { "vehicle": "lotus-emeya",       "vehicleLabel": "Lotus Emeya" },
+    "lotus-emeya-rear.jpg":         { "vehicle": "lotus-emeya",       "vehicleLabel": "Lotus Emeya" },
+    "lotus-emeya-side.jpg":         { "vehicle": "lotus-emeya",       "vehicleLabel": "Lotus Emeya" },
+    "porsche-911-gt3-front-1.jpg":  { "vehicle": "porsche-911-gt3",   "vehicleLabel": "Porsche 911 GT3" },
+    "porsche-911-gt3-front-2.jpg":  { "vehicle": "porsche-911-gt3",   "vehicleLabel": "Porsche 911 GT3" },
+    "porsche-911-gt3-rear.jpg":     { "vehicle": "porsche-911-gt3",   "vehicleLabel": "Porsche 911 GT3" },
+    "porsche-911-gt3-side.jpg":     { "vehicle": "porsche-911-gt3",   "vehicleLabel": "Porsche 911 GT3" },
+    "porsche-taycan.jpg":           { "vehicle": "porsche-taycan",     "vehicleLabel": "Porsche Taycan" },
+    "audi-rs-q8.jpg":               { "vehicle": "audi-rs-q8",        "vehicleLabel": "Audi RS Q8" },
+    "audi-a1-front.jpg":            { "vehicle": "audi-a1",           "vehicleLabel": "Audi A1" },
+    "audi-a1-rear.jpg":             { "vehicle": "audi-a1",           "vehicleLabel": "Audi A1" },
+    "audi-rs3.jpg":                 { "vehicle": "audi-rs3",          "vehicleLabel": "Audi RS3" },
+    "audi-tt.jpg":                  { "vehicle": "audi-tt",           "vehicleLabel": "Audi TT" },
+    "bmw-3-series-blue.jpg":        { "vehicle": "bmw-3-series",      "vehicleLabel": "BMW 3 Series" },
+    "bmw-3-series-silver.jpg":      { "vehicle": "bmw-3-series",      "vehicleLabel": "BMW 3 Series" },
+    "bmw-ix1-1.jpg":                { "vehicle": "bmw-ix1",           "vehicleLabel": "BMW iX1" },
+    "bmw-ix1-2.jpg":                { "vehicle": "bmw-ix1",           "vehicleLabel": "BMW iX1" },
+    "range-rover-velar-1.jpg":      { "vehicle": "range-rover-velar", "vehicleLabel": "Range Rover Velar" },
+    "range-rover-velar-2.jpg":      { "vehicle": "range-rover-velar", "vehicleLabel": "Range Rover Velar" },
+    "mercedes-gle-amg.jpg":         { "vehicle": "mercedes-gle-amg",  "vehicleLabel": "Mercedes GLE AMG" },
+    "mercedes-eqa-1.jpg":           { "vehicle": "mercedes-eqa",      "vehicleLabel": "Mercedes EQA" },
+    "mercedes-eqa-2.jpg":           { "vehicle": "mercedes-eqa",      "vehicleLabel": "Mercedes EQA" },
+    "mercedes-e-class-convertible.jpg": { "vehicle": "mercedes-e-class", "vehicleLabel": "Mercedes E-Class" },
+    "nissan-gtr.jpg":               { "vehicle": "nissan-gt-r",       "vehicleLabel": "Nissan GT-R" },
+    "lexus-nx-1.jpg":               { "vehicle": "lexus-nx",          "vehicleLabel": "Lexus NX" },
+    "lexus-nx-2.jpg":               { "vehicle": "lexus-nx",          "vehicleLabel": "Lexus NX" },
+    "hyundai-santa-fe.jpg":         { "vehicle": "hyundai-santa-fe",  "vehicleLabel": "Hyundai Santa Fe" },
+
+    "ford-mustang-bullitt-front.jpg":    { "vehicle": "ford-mustang-bullitt", "vehicleLabel": "Ford Mustang Bullitt", "alt": "Ford Mustang Bullitt Bullitt Edition mobile car wash by Latin King Detailing, Urmston" },
+    "ford-mustang-bullitt-side.jpg":     { "vehicle": "ford-mustang-bullitt", "vehicleLabel": "Ford Mustang Bullitt", "alt": "Ford Mustang Bullitt side view during mobile detailing by Latin King Detailing" },
+    "ford-mustang-bullitt-workshop.jpg": { "vehicle": "ford-mustang-bullitt", "vehicleLabel": "Ford Mustang Bullitt", "alt": "Ford Mustang Bullitt Bullitt Edition after full exterior valet by Latin King Detailing, Urmston" },
+
+    "ferrari-12cilindri-front.jpg":  { "vehicle": "ferrari-12cilindri", "vehicleLabel": "Ferrari 12Cilindri", "alt": "Ferrari 12Cilindri front detail after mobile car wash by Latin King Detailing" },
+    "ferrari-12cilindri-side.jpg":   { "vehicle": "ferrari-12cilindri", "vehicleLabel": "Ferrari 12Cilindri", "alt": "Ferrari 12Cilindri side profile during detailing by Latin King Detailing, Urmston" },
+    "ferrari-12cilindri-rear.jpg":   { "vehicle": "ferrari-12cilindri", "vehicleLabel": "Ferrari 12Cilindri", "alt": "Ferrari 12Cilindri rear three-quarter view, mobile valet by Latin King Detailing" },
+
+    "ferrari-purosangue-interior.jpg":   { "vehicle": "ferrari-purosangue", "vehicleLabel": "Ferrari Purosangue", "alt": "Ferrari Purosangue carbon fibre steering wheel and interior after interior detail by Latin King Detailing" },
+    "ferrari-purosangue-exterior-1.jpg": { "vehicle": "ferrari-purosangue", "vehicleLabel": "Ferrari Purosangue", "alt": "Ferrari Purosangue exterior detail by Latin King Detailing, mobile car care Urmston" },
+    "ferrari-purosangue-exterior-2.jpg": { "vehicle": "ferrari-purosangue", "vehicleLabel": "Ferrari Purosangue", "alt": "Ferrari Purosangue paintwork after mobile valet by Latin King Detailing, Urmston" },
+    "ferrari-purosangue-exterior-3.jpg": { "vehicle": "ferrari-purosangue", "vehicleLabel": "Ferrari Purosangue", "alt": "Ferrari Purosangue full exterior detail by Latin King Detailing, Urmston, Greater Manchester" },
+
+    "audi-tt-front-quarter.jpg":   { "vehicle": "audi-tt",  "vehicleLabel": "Audi TT", "alt": "Audi TT RS in Sepang Blue front three-quarter view after ceramic coating by Latin King Detailing" },
+    "audi-tt-rear-quarter.jpg":    { "vehicle": "audi-tt",  "vehicleLabel": "Audi TT", "alt": "Audi TT RS rear profile showing gloss finish after detailing by Latin King Detailing, Urmston" },
+    "audi-tt-straight-front.jpg":  { "vehicle": "audi-tt",  "vehicleLabel": "Audi TT", "alt": "Audi TT RS straight-on front view showcasing deep gloss after full detail by Latin King Detailing" }
+  }
+}

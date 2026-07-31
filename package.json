@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "optimize-images:force": "node scripts/optimize-images.mjs --force",
+    "optimize-images:dry": "node scripts/optimize-images.mjs --dry-run"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.20",
@@ -30,6 +33,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.22",
+    "exiftool-vendored": "^37.1.0",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -1,0 +1,25 @@
+{
+  "profile": "gallery",
+  "images": {
+    "interior-pedal-before-footwell.jpg": {
+      "vehicle": "",
+      "vehicleLabel": "",
+      "alt": "Car interior footwell before deep cleaning by Latin King Detailing — heavy salt and dirt contamination on floor mat and pedals"
+    },
+    "interior-pedal-after-footwell.jpg": {
+      "vehicle": "",
+      "vehicleLabel": "",
+      "alt": "Car interior footwell after interior deep clean by Latin King Detailing, Urmston — spotlessly clean floor mat and polished pedals"
+    },
+    "interior-pedal-before-closeup.jpg": {
+      "vehicle": "",
+      "vehicleLabel": "",
+      "alt": "Car accelerator pedal before interior detailing — heavily worn and contaminated with salt deposits and grime"
+    },
+    "interior-pedal-after-closeup.jpg": {
+      "vehicle": "",
+      "vehicleLabel": "",
+      "alt": "Car accelerator pedal after interior deep clean by Latin King Detailing — restored to clean, like-new condition"
+    }
+  }
+}

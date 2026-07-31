@@ -1,0 +1,8 @@
+{
+  "profile": "gallery",
+  "images": {
+    "tesla-model-3-foam-front.jpg": { "vehicle": "tesla-model-3",  "vehicleLabel": "Tesla Model 3" },
+    "tesla-model-3-foam-side.jpg":  { "vehicle": "tesla-model-3",  "vehicleLabel": "Tesla Model 3" },
+    "audi-q8-foam.jpg":             { "vehicle": "audi-q8",        "vehicleLabel": "Audi Q8" }
+  }
+}

@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# image pipeline — original source photos (large, not committed)
+/source-images/**/*.jpg
+/source-images/**/*.jpeg
+/source-images/**/*.png
+/source-images/**/*.tiff
+/source-images/**/*.tif
+/source-images/**/*.webp
+# _meta.json and folder structure ARE committed (tracked above via negation not needed)
+
+# generated WebP variants are committed (public/images/ is tracked)
