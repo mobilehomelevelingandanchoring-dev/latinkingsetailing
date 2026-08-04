@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SITE_IMAGES } from "@/lib/images";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { GalleryGrid } from "@/components/ui/GalleryGrid";
 
-const ALL_GALLERY_IMAGES = SITE_IMAGES.filter((img) => img.service === "gallery");
+const PREVIEW_IMAGES = SITE_IMAGES.filter((img) => img.service === "gallery").slice(0, 8);
 
 export function GalleryPreview() {
   return (
@@ -16,21 +16,8 @@ export function GalleryPreview() {
           description="Every vehicle shown was hand-detailed by Latin King Detailing across Urmston and Greater Manchester. Ferraris, Porsches, BMWs and everything in between — we come to you."
         />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-10">
-          {ALL_GALLERY_IMAGES.map((img) => (
-            <div
-              key={img.slug}
-              className="relative aspect-square overflow-hidden rounded-xl group"
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              />
-            </div>
-          ))}
+        <div className="mb-10">
+          <GalleryGrid images={PREVIEW_IMAGES} priorityCount={4} />
         </div>
 
         <div className="text-center">

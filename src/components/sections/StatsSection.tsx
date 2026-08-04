@@ -105,10 +105,7 @@ export function StatsSection() {
                   style={{
                     fontFamily: "var(--font-barlow-condensed)",
                     fontWeight: 900,
-                    background: "linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
+                    color: "#fff",
                   }}
                 >
                   <AnimatedNumber target={stat.value} suffix={stat.suffix} />
@@ -120,7 +117,7 @@ export function StatsSection() {
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
+        <p className="text-center text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
           Proudly covering M41, M32, M33, M17, M30, M27, WA13, WA14 &amp; WA3 postcodes across Greater Manchester.
         </p>
       </div>

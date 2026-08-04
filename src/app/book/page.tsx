@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description:
     "Request a free, no-obligation quote for mobile car detailing, ceramic coating or valeting across Urmston and Greater Manchester. We come to you — submit your details and we'll call to confirm.",
   alternates: { canonical: `${BUSINESS.url}/book` },
+  robots: { index: false, follow: false },
 };
 
 export default function BookPage() {
@@ -86,10 +87,10 @@ export default function BookPage() {
                 </div>
                 <div>
                   <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)", marginBottom: "1px" }}>
-                    Hours
+                    Availability
                   </p>
                   <p className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.8)" }}>
-                    Mon–Sun, 8am–8pm
+                    Open 24/7
                   </p>
                 </div>
               </div>

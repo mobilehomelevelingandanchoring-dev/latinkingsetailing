@@ -9,7 +9,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 export function TestimonialsSection() {
   return (
     <section
-      className="section-pad relative"
+      className="section-pad relative overflow-hidden"
       style={{ background: "var(--color-base-900)" }}
       aria-labelledby="reviews-heading"
     >

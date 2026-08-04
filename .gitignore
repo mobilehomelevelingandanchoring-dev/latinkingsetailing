@@ -53,3 +53,5 @@ next-env.d.ts
 # generated WebP variants are committed (public/images/ is tracked)
 
 .vercel
+
+.vercel

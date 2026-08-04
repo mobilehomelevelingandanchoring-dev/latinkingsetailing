@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { InstagramIcon, TikTokIcon } from "@/components/ui/SocialIcons";
 import { BUSINESS } from "@/lib/business";
 import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
+import { GalleryGrid } from "@/components/ui/GalleryGrid";
 import { CTASection } from "@/components/sections/CTASection";
 import { SITE_IMAGES } from "@/lib/images";
 
@@ -126,22 +126,7 @@ export default function GalleryPage() {
             <p className="text-base mb-10" style={{ color: "rgba(255,255,255,0.55)", maxWidth: "52ch" }}>
               Every vehicle below was detailed by Latin King Detailing across Urmston and Greater Manchester.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-              {GALLERY_IMAGES.map((img) => (
-                <div
-                  key={img.slug}
-                  className="relative aspect-square overflow-hidden rounded-xl group"
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  />
-                </div>
-              ))}
-            </div>
+            <GalleryGrid images={GALLERY_IMAGES} priorityCount={4} />
           </div>
 
           {/* Social proof / Instagram */}

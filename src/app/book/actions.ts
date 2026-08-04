@@ -3,6 +3,50 @@
 import { createClient } from "@supabase/supabase-js";
 import { bookingSchema } from "@/lib/booking-schema";
 
+export type QuoteResult = { ok: true } | { ok: false; error: string };
+
+export async function submitQuote(data: {
+  name: string;
+  phone: string;
+  postcode: string;
+  vehicleType: string;
+  vehicleMakeModel: string;
+  service: string;
+  message: string;
+}): Promise<QuoteResult> {
+  if (!data.name?.trim() || !data.phone?.trim() || !data.service?.trim()) {
+    return { ok: false, error: "Please fill in all required fields." };
+  }
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
+
+  if (!url || !key) {
+    return { ok: false, error: "Booking system unavailable — please call 07482 225323 directly." };
+  }
+
+  const supabase = createClient(url, key);
+  const vehicle = [data.vehicleType, data.vehicleMakeModel].filter(Boolean).join(" — ") || null;
+
+  const { error } = await supabase.from("bookings").insert({
+    full_name: data.name.trim(),
+    phone: data.phone.trim(),
+    email: null,
+    area: data.postcode?.trim() || null,
+    service: data.service.trim(),
+    vehicle,
+    notes: data.message?.trim() || null,
+    source: "quote-form",
+    status: "new",
+  });
+
+  if (error) {
+    return { ok: false, error: `Could not save your request (${error.code ?? "unknown"}) — please call 07482 225323.` };
+  }
+
+  return { ok: true };
+}
+
 export type BookingResult =
   | { ok: true; name: string; phone: string }
   | { ok: false; error: string };

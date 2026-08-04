@@ -8,6 +8,127 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTASection } from "@/components/sections/CTASection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
+// Per-service SEO metadata
+const SERVICE_META: Record<string, { title: string; description: string }> = {
+  "mobile-valeting": {
+    title: "Car Valet Urmston | Mini Valet Near Me | Mobile Car Wash Manchester",
+    description:
+      "Professional mobile car valet in Urmston & Manchester — mini valet, full valet & hand car wash alternative. We come to you. 5★ rated. From £40. Call 07482 225323.",
+  },
+  "car-detailing": {
+    title: "Car Detailing Manchester & Urmston | Full Car Detail Near Me",
+    description:
+      "Professional car detailing in Manchester & Urmston. Full car detail, decontamination, machine polishing & protection at your door. 5★ rated. From £120. Call 07482 225323.",
+  },
+  "paint-correction": {
+    title: "Paint Correction Manchester & Urmston | Swirl Mark Removal Near Me",
+    description:
+      "Machine paint correction in Manchester & Urmston — permanently remove swirl marks, scratches & oxidation. Mobile service at your door. From £150. Call 07482 225323.",
+  },
+  "machine-polishing": {
+    title: "Machine Polishing Manchester | Car Polish Near Me | Latin King Detailing",
+    description:
+      "Professional machine polishing in Manchester & Urmston. Restore gloss, remove mild swirl marks and prep paint for ceramic coating. Mobile service. From £80. Call 07482 225323.",
+  },
+  "ceramic-coating": {
+    title: "Ceramic Coating Manchester | Best Ceramic Coating UK | Latin King Detailing",
+    description:
+      "Best ceramic coating for cars in Manchester & Urmston — professional SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Includes paint correction prep. From £350. Book now.",
+  },
+  "paint-protection-film": {
+    title: "Paint Protection Film Manchester & Urmston | PPF Near Me",
+    description:
+      "Paint protection film (PPF) in Manchester & Urmston. Self-healing film guards against stone chips, scratches & road debris — optically clear. Mobile service. Call 07482 225323.",
+  },
+  "interior-detailing": {
+    title: "Interior Car Detailing Manchester | Car Seat Wash & Upholstery Clean Near Me",
+    description:
+      "Deep interior car detailing in Manchester & Urmston — car seat shampoo, upholstery steam clean & odour elimination at your door. 5★ rated. From £80. Call 07482 225323.",
+  },
+  "exterior-detailing": {
+    title: "Car Cleaning Manchester & Urmston | Exterior Car Detailing Near Me",
+    description:
+      "Professional car cleaning in Manchester & Urmston. Clay bar decontamination, machine polish & wax or sealant protection — fully mobile exterior detailing. From £80. Book now.",
+  },
+  "deep-cleaning": {
+    title: "Full Car Detail Manchester | Deep Car Clean Near Me | Latin King Detailing",
+    description:
+      "Complete full car detail in Manchester & Urmston — exterior wash, machine polish, interior hot water extraction, engine bay tidy & finishing protection in one visit. From £200.",
+  },
+  "engine-bay-cleaning": {
+    title: "Engine Bay Steam Clean Near Me | Manchester & Urmston | Latin King Detailing",
+    description:
+      "Car engine steam cleaning in Manchester & Urmston. Safe degreaser & steam clean at your location — no garage needed. Electronics protected throughout. From £50. Call 07482 225323.",
+  },
+};
+
+// Per-service CTA copy
+const SERVICE_CTA: Record<
+  string,
+  { headline: string; description: string; heroBtn: string; cardBtn: string }
+> = {
+  "mobile-valeting": {
+    headline: "Book Your Mobile Valet — We Come to You",
+    description: "Fixed price confirmed before we start. Fully self-equipped — own water, power and professional products. No travel required.",
+    heroBtn: "Book This Valet",
+    cardBtn: "Get My Valet Quote",
+  },
+  "car-detailing": {
+    headline: "Book a Full Car Detail at Your Door",
+    description: "Thorough decontamination, machine polishing and durable protection at your home or workplace across Greater Manchester.",
+    heroBtn: "Book This Detail",
+    cardBtn: "Get My Detail Quote",
+  },
+  "paint-correction": {
+    headline: "Restore Your Paint's True Gloss",
+    description: "Machine correction permanently removes swirl marks and scratches. Protective finish included. Fully mobile across Manchester.",
+    heroBtn: "Book Paint Correction",
+    cardBtn: "Get Correction Quote",
+  },
+  "machine-polishing": {
+    headline: "Bring Back That Showroom Shine",
+    description: "Professional machine polishing removes mild swirls and enhances gloss — a key step before any protective coating application.",
+    heroBtn: "Book Machine Polish",
+    cardBtn: "Get Polish Quote",
+  },
+  "ceramic-coating": {
+    headline: "Protect Your Paint for Years — Book Ceramic Coating",
+    description: "Professional SiO₂ ceramic coating lasts 2–3 years. Full decontamination and polish prep always included. Applied mobile at your location.",
+    heroBtn: "Book Ceramic Coating",
+    cardBtn: "Get Coating Quote",
+  },
+  "paint-protection-film": {
+    headline: "Stop Stone Chips Before They Start",
+    description: "Self-healing PPF shields your paintwork from road debris, chips and scratches. Optically clear and virtually invisible once installed.",
+    heroBtn: "Book PPF Installation",
+    cardBtn: "Get My PPF Quote",
+  },
+  "interior-detailing": {
+    headline: "Transform Your Interior — Deep Clean at Your Door",
+    description: "Hot water extraction, steam cleaning and odour elimination for every surface. A genuinely fresh interior — not a spray-and-wipe.",
+    heroBtn: "Book Interior Detail",
+    cardBtn: "Get Interior Quote",
+  },
+  "exterior-detailing": {
+    headline: "Showroom-Grade Exterior — Fully Mobile",
+    description: "Foam cannon pre-wash, clay bar decontamination, machine polish and wax or sealant protection — all performed at your location.",
+    heroBtn: "Book Exterior Detail",
+    cardBtn: "Get Exterior Quote",
+  },
+  "deep-cleaning": {
+    headline: "Total Vehicle Reset — Inside & Out",
+    description: "Full exterior detail, complete interior deep clean, engine bay tidy and finishing protection in a single visit.",
+    heroBtn: "Book Deep Clean",
+    cardBtn: "Get Deep Clean Quote",
+  },
+  "engine-bay-cleaning": {
+    headline: "A Clean Engine Bay, Without the Hassle",
+    description: "Safe steam and degreaser cleaning at your location — no garage visit needed. Sensitive electronics protected throughout.",
+    heroBtn: "Book Engine Bay Clean",
+    cardBtn: "Get Engine Bay Quote",
+  },
+};
+
 // Per-service extended content
 const SERVICE_CONTENT: Record<
   string,
@@ -22,9 +143,9 @@ const SERVICE_CONTENT: Record<
 > = {
   "mobile-valeting": {
     longDescription: [
-      "Latin King Detailing's mobile valeting service brings professional-grade cleaning and care directly to your home, workplace or any convenient location across Greater Manchester. You don't need to leave your property — we arrive fully equipped with our own water, power and products.",
-      "A mobile valet from Latin King Detailing is not a forecourt wash-and-vac. We use pH-neutral shampoos, microfibre towels and appropriate interior care products for each surface type — leather, fabric, hard plastic and glass. The result is a noticeably cleaner vehicle without risk of swirl marks or product damage.",
-      "We offer both mini valet and full valet options. A mini valet covers a thorough exterior wash, wheel and tyre clean, window clean and a vacuum and wipe-down of the interior. A full valet adds hand-polish, seat shampoo or leather conditioning, door shuts, boot area and all interior trim surfaces.",
+      "Latin King Detailing is Urmston and Manchester's professional mobile car valet service — a true alternative to a hand car wash, bringing expert-grade cleaning directly to your home, workplace or any convenient location. You never need to leave your property or wait in a queue: we arrive fully equipped with our own water, power and professional-grade products.",
+      "A mobile valet from Latin King Detailing is far removed from a forecourt wash-and-vac or automated car wash. We use pH-neutral shampoos, high-quality microfibre towels and the correct interior product for each surface — leather, fabric, hard plastic and glass — eliminating the risk of swirl marks or paint damage that brush-based car washes cause.",
+      "We offer both mini valet and full valet options across Urmston, Stretford, Sale, Manchester and all covered areas. A mini valet covers a safe exterior wash, wheel and tyre clean, window clean and a thorough vacuum and wipe-down of the interior. A full valet extends to hand-polish, seat shampoo or leather conditioning, door shuts, boot area and all interior trim surfaces.",
     ],
     includes: [
       "Safe two-bucket or foam-cannon exterior wash",
@@ -385,9 +506,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return {};
+  const meta = SERVICE_META[slug];
   return {
-    title: `${service.name} in Urmston & Manchester | Latin King Detailing`,
-    description: `${service.tagline}. Professional mobile ${service.name.toLowerCase()} across Urmston, Trafford and Greater Manchester. From £${service.priceFrom}. Call 07482 225323.`,
+    title: meta?.title ?? `${service.name} in Urmston & Manchester | Latin King Detailing`,
+    description: meta?.description ?? `${service.tagline}. Professional mobile ${service.name.toLowerCase()} across Urmston, Trafford and Greater Manchester. From £${service.priceFrom}. Call 07482 225323.`,
     alternates: { canonical: `/services/${slug}` },
   };
 }
@@ -443,13 +565,16 @@ export default async function ServicePage({ params }: PageProps) {
 
               <div className="flex flex-wrap gap-4 mt-8">
                 <Link href="/contact" className="btn btn-primary">
-                  Book This Service
+                  {SERVICE_CTA[slug]?.heroBtn ?? "Book This Service"}
                 </Link>
                 <a href={`tel:${BUSINESS.phone}`} className="btn btn-secondary">
                   <Phone size={16} />
                   {BUSINESS.phoneDisplay}
                 </a>
               </div>
+              <p className="mt-3 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
+                No payment required — we&apos;ll confirm your quote before any work starts.
+              </p>
             </div>
 
             {/* Pricing card */}
@@ -494,8 +619,11 @@ export default async function ServicePage({ params }: PageProps) {
               )}
 
               <Link href="/contact" className="btn btn-primary w-full justify-center">
-                Get Free Quote
+                {SERVICE_CTA[slug]?.cardBtn ?? "Get Free Quote"}
               </Link>
+              <p className="mt-3 text-xs text-center" style={{ color: "rgba(255,255,255,0.5)" }}>
+                No upfront payment · Fixed quote before we start
+              </p>
             </div>
           </div>
         </div>
@@ -542,7 +670,7 @@ export default async function ServicePage({ params }: PageProps) {
                   >
                     <MapPin size={13} style={{ color: "var(--color-accent-500)" }} />
                     {service.name} in {area.name}
-                    <ArrowRight size={12} style={{ color: "rgba(255,255,255,0.35)" }} />
+                    <ArrowRight size={12} style={{ color: "rgba(255,255,255,0.5)" }} />
                   </Link>
                 );
               })}
@@ -554,8 +682,9 @@ export default async function ServicePage({ params }: PageProps) {
       <TestimonialsSection />
       <CTASection
         eyebrow="Book this service"
-        title={`Book ${service.name} in Manchester`}
-        description={`Get a no-obligation quote for ${service.name.toLowerCase()} at your location. We serve Urmston, Trafford and across Greater Manchester.`}
+        title={SERVICE_CTA[slug]?.headline ?? `Book ${service.name} in Manchester`}
+        description={SERVICE_CTA[slug]?.description ?? `Get a no-obligation quote for ${service.name.toLowerCase()} at your location. We serve Urmston, Trafford and across Greater Manchester.`}
+        primaryCTA={SERVICE_CTA[slug]?.heroBtn ?? "Get My Free Quote"}
       />
     </>
   );

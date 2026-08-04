@@ -158,7 +158,7 @@ export function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-white/70 hover:text-white transition-colors"
+            className="lg:hidden p-2.5 text-white/70 hover:text-white transition-colors rounded-md"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}

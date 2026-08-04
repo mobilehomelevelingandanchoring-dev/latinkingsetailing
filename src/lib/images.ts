@@ -189,6 +189,366 @@ export const SITE_IMAGES: readonly SiteImage[] = [
     "srcset": "/images/gallery/gallery-ford-mustang-bullitt-urmston-latin-king-detailing-13-1280w.webp 1280w, /images/gallery/gallery-ford-mustang-bullitt-urmston-latin-king-detailing-13-800w.webp 800w, /images/gallery/gallery-ford-mustang-bullitt-urmston-latin-king-detailing-13-480w.webp 480w"
   },
   {
+    "slug": "gallery-mg-td-classic-urmston-latin-king-detailing-14",
+    "service": "gallery",
+    "alt": "Classic MG TD roadster front three-quarter view after detailing by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-14-1280w.webp",
+    "srcset": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-14-1280w.webp 1280w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-14-800w.webp 800w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-14-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-a-class-urmston-latin-king-detailing-15",
+    "service": "gallery",
+    "alt": "Mercedes A-Class black rear three-quarter after mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-15-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-15-1280w.webp 1280w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-15-800w.webp 800w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-15-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mg-td-classic-urmston-latin-king-detailing-16",
+    "service": "gallery",
+    "alt": "Classic MG TD roadster rear view exiting barn after detailing by Latin King Detailing, Greater Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-16-1280w.webp",
+    "srcset": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-16-1280w.webp 1280w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-16-800w.webp 800w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-16-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-brabus-amg-gt63s-manchester-latin-king-detailing-17",
+    "service": "gallery",
+    "alt": "Brabus Mercedes-AMG GT 63 S matte black front straight after detailing by Latin King Detailing, Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-17-1280w.webp",
+    "srcset": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-17-1280w.webp 1280w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-17-800w.webp 800w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-17-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-brabus-amg-gt63s-manchester-latin-king-detailing-18",
+    "service": "gallery",
+    "alt": "Brabus Mercedes-AMG GT 63 S carbon fibre wheel with red caliper detail after valet by Latin King Detailing",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-18-1280w.webp",
+    "srcset": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-18-1280w.webp 1280w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-18-800w.webp 800w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-18-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-19",
+    "service": "gallery",
+    "alt": "Porsche Taycan Miami Blue three-quarter view with snow foam during mobile wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-19-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-19-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-19-800w.webp 800w, /images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-19-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-brabus-amg-gt63s-manchester-latin-king-detailing-20",
+    "service": "gallery",
+    "alt": "Brabus Mercedes-AMG GT 63 S matte black front three-quarter after detailing by Latin King Detailing, Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-20-1280w.webp",
+    "srcset": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-20-1280w.webp 1280w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-20-800w.webp 800w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-20-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-cupra-born-urmston-latin-king-detailing-21",
+    "service": "gallery",
+    "alt": "CUPRA Born white EV side three-quarter after exterior detail by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-21-1280w.webp",
+    "srcset": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-21-1280w.webp 1280w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-21-800w.webp 800w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-21-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-cupra-born-urmston-latin-king-detailing-22",
+    "service": "gallery",
+    "alt": "CUPRA Born white EV full three-quarter view after mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-22-1280w.webp",
+    "srcset": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-22-1280w.webp 1280w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-22-800w.webp 800w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-22-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-cupra-born-urmston-latin-king-detailing-23",
+    "service": "gallery",
+    "alt": "CUPRA Born white EV front view during snow foam application by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-23-1280w.webp",
+    "srcset": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-23-1280w.webp 1280w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-23-800w.webp 800w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-23-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-cupra-born-urmston-latin-king-detailing-24",
+    "service": "gallery",
+    "alt": "CUPRA Born white EV low-angle front view during snow foam pre-wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-24-1280w.webp",
+    "srcset": "/images/gallery/gallery-cupra-born-urmston-latin-king-detailing-24-1280w.webp 1280w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-24-800w.webp 800w, /images/gallery/gallery-cupra-born-urmston-latin-king-detailing-24-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-land-rover-discovery-5-manchester-latin-king-detailing-25",
+    "service": "gallery",
+    "alt": "Land Rover Discovery 5 dark grey front three-quarter during mobile valet by Latin King Detailing, Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-25-1280w.webp",
+    "srcset": "/images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-25-1280w.webp 1280w, /images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-25-800w.webp 800w, /images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-25-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-brabus-amg-gt63s-manchester-latin-king-detailing-26",
+    "service": "gallery",
+    "alt": "Brabus Mercedes-AMG GT 63 S matte black rear three-quarter after detailing by Latin King Detailing, Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-26-1280w.webp",
+    "srcset": "/images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-26-1280w.webp 1280w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-26-800w.webp 800w, /images/gallery/gallery-brabus-amg-gt63s-manchester-latin-king-detailing-26-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-land-rover-discovery-5-manchester-latin-king-detailing-27",
+    "service": "gallery",
+    "alt": "Land Rover Discovery 5 dark grey rear three-quarter with snow foam by Latin King Detailing, Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-27-1280w.webp",
+    "srcset": "/images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-27-1280w.webp 1280w, /images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-27-800w.webp 800w, /images/gallery/gallery-land-rover-discovery-5-manchester-latin-king-detailing-27-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-a-class-urmston-latin-king-detailing-28",
+    "service": "gallery",
+    "alt": "Mercedes A-Class black front three-quarter after mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-28-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-28-1280w.webp 1280w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-28-800w.webp 800w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-28-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-a-class-urmston-latin-king-detailing-29",
+    "service": "gallery",
+    "alt": "Mercedes A-Class black side profile after exterior valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-29-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-29-1280w.webp 1280w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-29-800w.webp 800w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-29-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-a-class-urmston-latin-king-detailing-30",
+    "service": "gallery",
+    "alt": "Mercedes A-Class black front straight after mobile detailing by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-30-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-30-1280w.webp 1280w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-30-800w.webp 800w, /images/gallery/gallery-mercedes-a-class-urmston-latin-king-detailing-30-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cls-urmston-latin-king-detailing-31",
+    "service": "gallery",
+    "alt": "Mercedes CLS black front three-quarter after mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-31-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-31-1280w.webp 1280w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-31-800w.webp 800w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-31-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cls-urmston-latin-king-detailing-32",
+    "service": "gallery",
+    "alt": "Mercedes CLS black front straight after exterior detail by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-32-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-32-1280w.webp 1280w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-32-800w.webp 800w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-32-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cls-urmston-latin-king-detailing-33",
+    "service": "gallery",
+    "alt": "Mercedes CLS black front three-quarter after mobile car wash by Latin King Detailing, Greater Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-33-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-33-1280w.webp 1280w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-33-800w.webp 800w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-33-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cls-urmston-latin-king-detailing-34",
+    "service": "gallery",
+    "alt": "Mercedes CLS black side profile after mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-34-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-34-1280w.webp 1280w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-34-800w.webp 800w, /images/gallery/gallery-mercedes-cls-urmston-latin-king-detailing-34-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-audi-rs5-urmston-latin-king-detailing-35",
+    "service": "gallery",
+    "alt": "Audi RS5 black front three-quarter after mobile detailing by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-35-1280w.webp",
+    "srcset": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-35-1280w.webp 1280w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-35-800w.webp 800w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-35-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-audi-rs5-urmston-latin-king-detailing-36",
+    "service": "gallery",
+    "alt": "Audi RS5 black three-quarter with pop-up gazebo during mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-36-1280w.webp",
+    "srcset": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-36-1280w.webp 1280w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-36-800w.webp 800w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-36-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-audi-rs5-urmston-latin-king-detailing-37",
+    "service": "gallery",
+    "alt": "Audi RS5 black side profile after exterior car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-37-1280w.webp",
+    "srcset": "/images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-37-1280w.webp 1280w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-37-800w.webp 800w, /images/gallery/gallery-audi-rs5-urmston-latin-king-detailing-37-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-38",
+    "service": "gallery",
+    "alt": "Mercedes GLC Coupe AMG black side profile after mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-38-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-38-1280w.webp 1280w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-38-800w.webp 800w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-38-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-39",
+    "service": "gallery",
+    "alt": "Mercedes GLC Coupe AMG black rear three-quarter after exterior detail by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-39-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-39-1280w.webp 1280w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-39-800w.webp 800w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-39-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-40",
+    "service": "gallery",
+    "alt": "Mercedes GLC Coupe AMG black side profile after mobile car wash by Latin King Detailing, Greater Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-40-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-40-1280w.webp 1280w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-40-800w.webp 800w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-40-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-e-class-urmston-latin-king-detailing-41",
+    "service": "gallery",
+    "alt": "Mercedes E-Class grey front straight during mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-e-class-urmston-latin-king-detailing-41-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-e-class-urmston-latin-king-detailing-41-1280w.webp 1280w, /images/gallery/gallery-mercedes-e-class-urmston-latin-king-detailing-41-800w.webp 800w, /images/gallery/gallery-mercedes-e-class-urmston-latin-king-detailing-41-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-black-urmston-latin-king-detailing-42",
+    "service": "gallery",
+    "alt": "Porsche Taycan black front three-quarter with snow foam during mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-42-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-42-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-42-800w.webp 800w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-42-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-black-urmston-latin-king-detailing-43",
+    "service": "gallery",
+    "alt": "Porsche Taycan black front three-quarter after exterior detail by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-43-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-43-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-43-800w.webp 800w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-43-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-black-urmston-latin-king-detailing-44",
+    "service": "gallery",
+    "alt": "Porsche Taycan black side profile during mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-44-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-44-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-44-800w.webp 800w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-44-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-45",
+    "service": "gallery",
+    "alt": "Mercedes GLC Coupe AMG black front three-quarter after mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-45-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-45-1280w.webp 1280w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-45-800w.webp 800w, /images/gallery/gallery-mercedes-glc-coupe-amg-urmston-latin-king-detailing-45-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-black-urmston-latin-king-detailing-46",
+    "service": "gallery",
+    "alt": "Porsche Taycan black front three-quarter on driveway after mobile detailing by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-46-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-46-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-46-800w.webp 800w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-46-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-black-urmston-latin-king-detailing-47",
+    "service": "gallery",
+    "alt": "Porsche Taycan black front straight after mobile car wash by Latin King Detailing, Greater Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-47-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-47-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-47-800w.webp 800w, /images/gallery/gallery-porsche-taycan-black-urmston-latin-king-detailing-47-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cla-amg-urmston-latin-king-detailing-48",
+    "service": "gallery",
+    "alt": "Mercedes CLA AMG red front straight during snow foam mobile wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-48-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-48-1280w.webp 1280w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-48-800w.webp 800w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-48-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cla-amg-urmston-latin-king-detailing-49",
+    "service": "gallery",
+    "alt": "Mercedes CLA AMG red front three-quarter during mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-49-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-49-1280w.webp 1280w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-49-800w.webp 800w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-49-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-50",
+    "service": "gallery",
+    "alt": "Porsche Taycan Miami Blue front straight during mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-50-1280w.webp",
+    "srcset": "/images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-50-1280w.webp 1280w, /images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-50-800w.webp 800w, /images/gallery/gallery-porsche-taycan-miami-blue-urmston-latin-king-detailing-50-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cla-amg-urmston-latin-king-detailing-51",
+    "service": "gallery",
+    "alt": "Mercedes CLA AMG red three-quarter side view during mobile car wash by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-51-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-51-1280w.webp 1280w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-51-800w.webp 800w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-51-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mercedes-cla-amg-urmston-latin-king-detailing-52",
+    "service": "gallery",
+    "alt": "Mercedes CLA AMG red rear three-quarter after mobile valet by Latin King Detailing, Urmston",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-52-1280w.webp",
+    "srcset": "/images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-52-1280w.webp 1280w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-52-800w.webp 800w, /images/gallery/gallery-mercedes-cla-amg-urmston-latin-king-detailing-52-480w.webp 480w"
+  },
+  {
+    "slug": "gallery-mg-td-classic-urmston-latin-king-detailing-53",
+    "service": "gallery",
+    "alt": "Classic MG TD roadster front straight inside barn after detailing by Latin King Detailing, Greater Manchester",
+    "widths": [1280, 800, 480],
+    "profile": "gallery",
+    "src": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-53-1280w.webp",
+    "srcset": "/images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-53-1280w.webp 1280w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-53-800w.webp 800w, /images/gallery/gallery-mg-td-classic-urmston-latin-king-detailing-53-480w.webp 480w"
+  },
+  {
     "slug": "interior-urmston-latin-king-detailing-01",
     "service": "interior",
     "alt": "Car accelerator pedal after interior deep clean by Latin King Detailing — restored to clean, like-new condition",

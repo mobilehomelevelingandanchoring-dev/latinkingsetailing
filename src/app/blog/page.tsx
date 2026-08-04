@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
+import { buildBlogSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Car Detailing Blog — Tips, Guides & Expert Advice | Latin King Detailing",
@@ -40,7 +41,11 @@ const POSTS = [
 ];
 
 export default function BlogIndexPage() {
+  const blogSchema = buildBlogSchema();
+
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
     <section className="section-pad pt-32 md:pt-40">
       <div className="section-container">
         <p className="eyebrow">Knowledge base</p>
@@ -70,7 +75,7 @@ export default function BlogIndexPage() {
                 >
                   {post.category}
                 </span>
-                <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+                <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
                   <Clock size={11} />
                   {post.readTime}
                 </span>
@@ -104,5 +109,6 @@ export default function BlogIndexPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
-import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildFAQSchema, buildArticleSchema } from "@/lib/schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTASection } from "@/components/sections/CTASection";
 
@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     title: "Ceramic Coating vs Wax: The Complete Comparison",
     description: "Professional breakdown of ceramic coating vs wax — durability, hydrophobics, cost and which is right for your car.",
     type: "article",
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-01-15",
+    authors: [BUSINESS.url],
+    tags: ["ceramic coating", "car wax", "paint protection", "car detailing"],
   },
 };
 
@@ -43,20 +47,19 @@ export default function CeramicVsWaxPost() {
     { name: "Ceramic Coating vs Wax", url: `${BUSINESS.url}/blog/ceramic-coating-vs-wax` },
   ]);
   const faqSchema = buildFAQSchema(FAQS);
+  const articleSchema = buildArticleSchema({
+    headline: "Ceramic Coating vs Wax: Which Paint Protection is Right for Your Car?",
+    description: "Ceramic coating and wax both protect your car's paint — but they work differently, last different lengths of time, and suit different budgets. An honest, factual comparison from a professional detailer.",
+    datePublished: "2025-01-15",
+    dateModified: "2025-01-15",
+    url: `${BUSINESS.url}/blog/ceramic-coating-vs-wax`,
+  });
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: "Ceramic Coating vs Wax: Which Paint Protection is Right for Your Car?",
-        author: { "@type": "Organization", name: BUSINESS.name },
-        publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.url },
-        datePublished: "2025-01-15",
-        url: `${BUSINESS.url}/blog/ceramic-coating-vs-wax`,
-      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <article className="section-pad pt-32 md:pt-40">
         <div className="section-container max-w-3xl">
@@ -75,7 +78,7 @@ export default function CeramicVsWaxPost() {
             >
               Comparison
             </span>
-            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
               <Clock size={11} />
               6 min read
             </span>

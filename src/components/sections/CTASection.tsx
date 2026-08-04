@@ -2,19 +2,30 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, CheckCircle } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 
 interface CTASectionProps {
   eyebrow?: string;
   title?: string;
   description?: string;
+  primaryCTA?: string;
+  trustPoints?: string[];
 }
 
+const DEFAULT_TRUST_POINTS = [
+  "No upfront payment required",
+  "We bring all equipment — water, power & products",
+  "5★ rated · 50+ verified Google reviews",
+  "Open 24/7 — call or message anytime",
+];
+
 export function CTASection({
-  eyebrow = "Ready to book?",
-  title = "Get your free quote today",
-  description = "Tell us your vehicle, location and the service you're after — we'll come back with a no-obligation price. Mobile, flexible and fully professional.",
+  eyebrow = "Free Quote · No Obligation",
+  title = "Book Your Detail — We Come to You",
+  description = "Tell us your vehicle, location and the service you're after. We'll confirm your quote before any work starts — no payment required upfront.",
+  primaryCTA = "Get My Free Quote",
+  trustPoints = DEFAULT_TRUST_POINTS,
 }: CTASectionProps) {
   return (
     <section
@@ -56,13 +67,25 @@ export function CTASection({
           <h2 id="cta-heading" className="mb-5">
             {title}
           </h2>
-          <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.6)", maxWidth: "none" }}>
+          <p className="text-lg mb-7" style={{ color: "rgba(255,255,255,0.6)", maxWidth: "none" }}>
             {description}
           </p>
+
+          {trustPoints.length > 0 && (
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-8 text-left max-w-xl mx-auto">
+              {trustPoints.map((point) => (
+                <li key={point} className="flex items-center gap-2.5 text-sm" style={{ color: "rgba(255,255,255,0.72)" }}>
+                  <CheckCircle size={14} className="flex-shrink-0" style={{ color: "var(--color-accent-500)" }} />
+                  {point}
+                </li>
+              ))}
+            </ul>
+          )}
+
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact" className="btn btn-primary text-base px-8 py-4">
               <MessageCircle size={18} />
-              Get My Free Quote
+              {primaryCTA}
             </Link>
             <a
               href={`tel:${BUSINESS.phone}`}
@@ -72,8 +95,8 @@ export function CTASection({
               Call {BUSINESS.phoneDisplay}
             </a>
           </div>
-          <p className="mt-6 text-sm" style={{ color: "rgba(255,255,255,0.35)" }}>
-            {BUSINESS.availability}
+          <p className="mt-5 text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
+            No payment required — we&apos;ll call to confirm your quote before booking is confirmed.
           </p>
         </motion.div>
       </div>

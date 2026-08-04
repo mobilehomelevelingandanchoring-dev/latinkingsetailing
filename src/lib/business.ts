@@ -30,8 +30,7 @@ export const BUSINESS = {
   url: "https://latinkingdetailing.co.uk",
 
   // Booking / availability
-  availability:
-    "By appointment — message us for flexible mobile availability across Greater Manchester.",
+  availability: "Open 24/7 — call or message anytime.",
   openingHoursSpec: [
     {
       dayOfWeek: [
@@ -43,13 +42,13 @@ export const BUSINESS = {
         "Saturday",
         "Sunday",
       ],
-      opens: "08:00",
-      closes: "20:00",
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
 
   social: {
-    instagram: "https://www.instagram.com/latinkingdetailing",
+    instagram: "https://www.instagram.com/latin_King_detailing",
     tiktok: "https://www.tiktok.com/@latinkingdetailing",
     facebook: "https://www.facebook.com/latinkingdetailing",
   },
@@ -206,7 +205,7 @@ export const BUSINESS = {
       postcodes: ["M41"],
       isHQ: true,
       description:
-        "Our home base. As a Urmston-based mobile detailer, we're typically available for same-day or next-day slots across M41 postcodes including Urmston town centre, Flixton Road, Stretford Road and all surrounding streets.",
+        "Our home base and primary service area. Latin King Detailing is the leading mobile car wash, car valet and detailing service in Urmston — a professional hand car wash alternative that comes to your door. We offer same-day and next-day slots across M41 postcodes including Urmston town centre, Flixton Road, Stretford Road and all surrounding residential streets.",
     },
     {
       slug: "flixton",
@@ -220,7 +219,7 @@ export const BUSINESS = {
       name: "Stretford",
       postcodes: ["M32"],
       description:
-        "Stretford is one of our most active service areas — a short drive from Urmston along the A56. We cover all of M32, including Stretford town centre, Edge Lane and the residential streets off Chester Road.",
+        "Stretford is one of our most active service areas — a short drive from our Urmston base along the A56. We offer mobile car valet, full car detailing, ceramic coating and paint correction across all of M32, including Stretford town centre, Edge Lane and the residential streets off Chester Road.",
     },
     {
       slug: "davyhulme",
@@ -305,6 +304,13 @@ export const BUSINESS = {
       postcodes: ["M20"],
       description:
         "Didsbury's mix of high-value vehicles and discerning owners makes it a natural fit for our premium detailing service. We serve West Didsbury, East Didsbury and Withington across M20 postcodes.",
+    },
+    {
+      slug: "manchester",
+      name: "Manchester",
+      postcodes: ["M1", "M2", "M3", "M4", "M8", "M13", "M14", "M15", "M16"],
+      description:
+        "Latin King Detailing serves Manchester city and the wider Greater Manchester area with fully mobile car detailing, ceramic coating, paint correction and valeting. From our Urmston base we cover all key Manchester postcodes — providing the same premium detailing standard at your door across the city.",
     },
   ],
 } as const;

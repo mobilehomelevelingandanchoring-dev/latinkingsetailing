@@ -22,7 +22,7 @@ const FAQS = [
       },
       {
         question: "What areas do you cover?",
-        answer: `Latin King Detailing is based in Urmston (M41) and covers Urmston, Flixton, Stretford, Davyhulme, Sale, Old Trafford, Chorlton-cum-Hardy, Eccles, Salford, Altrincham, Carrington, Partington, Irlam, Timperley, Didsbury and surrounding Greater Manchester postcodes. Message us with your postcode to confirm availability.`,
+        answer: `Latin King Detailing is based in Urmston (M41) and covers Urmston, Flixton, Stretford, Davyhulme, Sale, Old Trafford, Chorlton-cum-Hardy, Eccles, Salford, Altrincham, Carrington, Partington, Irlam, Timperley, Didsbury, Manchester and surrounding Greater Manchester postcodes. Message us with your postcode to confirm availability.`,
       },
       {
         question: "How do I book?",
@@ -39,6 +39,41 @@ const FAQS = [
         answer:
           "Light rain generally isn't a problem for valeting, but paint correction, ceramic coating application and wax/sealant work requires dry conditions. If the forecast is unsuitable for your specific service, we'll rearrange to a better day without any penalty.",
       },
+      {
+        question: "Do you need power or water at my location?",
+        answer:
+          "No. Latin King Detailing is entirely self-sufficient — we carry our own water supply, generator and all professional-grade products. The only thing you need to provide is a safe outdoor space to work around the vehicle.",
+      },
+    ],
+  },
+  {
+    category: "Car Detailing",
+    items: [
+      {
+        question: "What is the difference between car detailing and car valeting?",
+        answer:
+          "A valet focuses on cleaning — washing and vacuuming to remove everyday dirt. Car detailing goes significantly further: it decontaminates the paint using iron fallout remover and clay bar, corrects surface defects through machine polishing, and applies durable protection such as ceramic coating or sealant. Detailing produces a higher-quality, longer-lasting result.",
+      },
+      {
+        question: "How often should I get my car detailed?",
+        answer:
+          "For most vehicles, a full detail once or twice a year maintains excellent condition when supported by regular maintenance washes. Cars driven frequently, parked outdoors or used in harsh conditions benefit from more frequent attention. A ceramic-coated car requires significantly less upkeep between details.",
+      },
+      {
+        question: "Can I get car detailing in winter in Manchester?",
+        answer:
+          "Yes — many services including interior detailing, engine bay cleaning and maintenance valets are suitable year-round. Paint correction and ceramic coating application require dry, mild conditions. In winter we work around suitable weather windows; if conditions are unfavourable we rearrange at no cost.",
+      },
+      {
+        question: "Do you detail vans, SUVs and large vehicles in Manchester?",
+        answer:
+          "Yes. Latin King Detailing works on all vehicle types — hatchbacks, saloons, estates, SUVs, MPVs, vans, luxury and prestige vehicles, and exotic sports cars. Pricing for larger vehicles is adjusted to reflect the additional time required. Contact us with your vehicle details for an accurate quote.",
+      },
+      {
+        question: "Do you offer pre-sale car preparation?",
+        answer:
+          "Yes. A pre-sale detail is one of the most effective ways to maximise your car's resale value. We offer tailored pre-sale packages combining interior deep clean, exterior polish and protection. A professionally detailed car presents better to buyers and typically achieves a higher sale price.",
+      },
     ],
   },
   {
@@ -50,9 +85,9 @@ const FAQS = [
           "A mini valet covers the core cleaning tasks: exterior wash, wheel clean, windows, interior vacuum and wipe-down. A full valet adds hand polish, deep cleaning of door shuts, boot area, seat shampoo or leather conditioning, and comprehensive trim and glass work inside.",
       },
       {
-        question: "What is the difference between a valet and a car detail?",
+        question: "What is a maintenance valet?",
         answer:
-          "A valet focuses on cleaning — removing visible dirt inside and out. A detail goes further: it decontaminates the paint using iron fallout remover and clay bar, corrects surface imperfections through machine polishing, and applies durable protection. Detailing produces a higher quality, longer-lasting result.",
+          "A maintenance valet is a regular light-clean service designed to keep a detailed or ceramic-coated car in top condition between full details. It typically includes a safe foam-cannon wash, wheel clean, glass clean, interior wipe-down and a spray sealant or ceramic topper to refresh paint protection.",
       },
       {
         question: "Do you offer hand car wash services in Urmston?",
@@ -80,6 +115,16 @@ const FAQS = [
           "A professionally applied ceramic coating lasts 2–3 years with correct maintenance — specifically, using touchless or two-bucket hand wash technique and avoiding automated brush car washes. Premium coatings with annual maintenance top-ups can last 5+ years.",
       },
       {
+        question: "Is ceramic coating worth it in Manchester?",
+        answer:
+          "Yes — particularly in Manchester's climate. The city's frequent rainfall and road salt in winter make a hydrophobic ceramic coating especially valuable: water and grime sheet off the paint rather than bonding to it. A professionally applied coating keeps your car visibly cleaner with far less effort for 2–3 years, making it highly cost-effective compared to repeated wax applications.",
+      },
+      {
+        question: "How much does ceramic coating cost in Manchester?",
+        answer:
+          "Professional ceramic coating in Manchester starts from £350 at Latin King Detailing. The exact price depends on vehicle size and paint condition. Paint correction is recommended before coating application to ensure the best possible result — this is always included in our coating packages.",
+      },
+      {
         question: "What is the difference between ceramic coating and wax?",
         answer:
           "Wax sits on the surface and typically lasts 2–4 months. Ceramic coating bonds at a molecular level to the clear coat and lasts 2–3 years. Ceramic coating is significantly more hydrophobic, more heat and UV resistant, and provides better protection against light chemical damage.",
@@ -100,6 +145,16 @@ const FAQS = [
           "Paint correction removes defects that sit within the clear coat layer: swirl marks from automated car washes or incorrect washing, light scratches, water spots, bird dropping etching, oxidation and haze. It cannot remove deep scratches or stone chips that penetrate to the base coat or primer.",
       },
       {
+        question: "What is the difference between paint correction and machine polishing?",
+        answer:
+          "Machine polishing is a broad term for using a powered polishing machine. Paint correction is a specific, multi-stage machine polishing process aimed at removing significant defects like swirl marks, scratches and oxidation from the clear coat. Correction typically uses more aggressive compounds and more passes than a standard enhancement polish.",
+      },
+      {
+        question: "How do I know if my car needs paint correction?",
+        answer:
+          "Look at your paintwork under direct sunlight or bright artificial light from a low angle. If you see circular swirl marks, fine scratches, haze or dull areas that don't clean off, your paint has clear coat defects that correction can remove. Common causes are automated car washes and incorrect hand washing technique.",
+      },
+      {
         question: "Will paint correction damage my car's paint?",
         answer:
           "When performed by a trained professional using the correct machine, pad and compound combination for the specific paint, correction removes a controlled and minimal amount of clear coat. Modern clear coat panels are typically 50–100 microns thick; a one-stage correction removes approximately 1–3 microns. Latin King Detailing measures paint depth before starting to ensure correction is performed safely.",
@@ -112,7 +167,7 @@ const FAQS = [
       {
         question: "How much does mobile car valeting in Manchester cost?",
         answer:
-          "A mobile mini valet starts from £40. A full valet starts from £80–£100 depending on vehicle size. Full car detailing packages start from £120. Ceramic coating packages start from £350. All prices are confirmed as a fixed quote before any work begins.",
+          "A mobile mini valet starts from £40. A full valet starts from £80–£100 depending on vehicle size. Full car detailing packages start from £120. Paint correction starts from £200. Ceramic coating packages start from £350. All prices are confirmed as a fixed quote before any work begins.",
       },
       {
         question: "Do you offer payment plans?",

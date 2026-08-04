@@ -50,3 +50,19 @@ export async function updateBookingStatus(formData: FormData) {
 
   redirect("/admin");
 }
+
+export async function deleteBooking(formData: FormData) {
+  const adminPass = process.env.ADMIN_PASSWORD?.trim() ?? "";
+  const jar = await cookies();
+  const cookieVal = jar.get(COOKIE)?.value;
+
+  if (!adminPass || !cookieVal || cookieVal !== adminPass) {
+    redirect("/admin/login");
+  }
+
+  const id = formData.get("id") as string;
+  const db = createAdminClient();
+  await db.from("bookings").delete().eq("id", id);
+
+  redirect("/admin");
+}

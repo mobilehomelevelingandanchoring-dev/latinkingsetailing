@@ -9,9 +9,9 @@ import { CTASection } from "@/components/sections/CTASection";
 import { GalleryPreview } from "@/components/sections/GalleryPreview";
 
 export const metadata: Metadata = {
-  title: "Mobile Car Wash, Valet & Detailing Urmston | Latin King Detailing",
+  title: "Car Detailing Manchester & Urmston | Ceramic Coating, Paint Correction & Mobile Valeting | Latin King Detailing",
   description:
-    "5★ rated mobile car wash, valeting, paint correction & ceramic coating in Urmston, Manchester. We come to you — hand car wash quality, showroom-grade results. Covering Trafford, Sale, Altrincham & across Greater Manchester.",
+    "Professional mobile car detailing in Manchester & Urmston — ceramic coating, paint correction, machine polishing, interior detailing & car valeting at your door. 5★ rated. From £40. Call 07482 225323.",
   alternates: { canonical: "/" },
 };
 

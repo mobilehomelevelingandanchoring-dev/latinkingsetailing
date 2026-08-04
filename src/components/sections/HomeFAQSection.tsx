@@ -26,6 +26,26 @@ const FAQS = [
     answer:
       "Yes — ceramic coating and paint correction are two of our most popular services across Urmston, Trafford and the wider Greater Manchester area. Ceramic coating provides a permanent SiO₂ hydrophobic shield lasting 2–3 years. Paint correction removes swirl marks, light scratches and oxidation using professional machine polishing equipment. Both are carried out at your location.",
   },
+  {
+    question: "How much does a mobile car wash or mini valet cost in Urmston?",
+    answer:
+      "Our mobile car wash and mini valet service in Urmston starts from £40. A full valet starts from £80, a full car detail from £120, and ceramic coating from £350. Every price includes us coming to your home or workplace in Urmston (M41) or any covered area — no travel required. We confirm your exact quote before any work begins.",
+  },
+  {
+    question: "Do you detail sports cars and exotic vehicles in Manchester?",
+    answer:
+      "Yes — sports car and exotic vehicle detailing is something we do regularly. We have hands-on experience with high-value and exotic cars including the Ferrari Purosangue, and we understand the extra care required for thin paint systems, exotic finishes and specialist materials. We use products and techniques selected specifically for each vehicle.",
+  },
+  {
+    question: "Can you wash or valet a satin or matte wrapped car?",
+    answer:
+      "Yes — we regularly work with satin, matte and gloss-wrapped vehicles. Automated car washes with brushes can scratch or lift wrap edges, but our safe two-bucket hand wash technique and pH-neutral, wax-free products are fully compatible with vinyl wraps and specialist paint finishes. We know what not to use as much as what to use.",
+  },
+  {
+    question: "How is a mobile valet different from a hand car wash?",
+    answer:
+      "A traditional hand car wash is a shared-space, rapid turnaround service — often using recycled water, worn cloths and a brush on your glass. Our mobile valet comes to your door with fresh clean water, professional microfibre products and individual attention to your specific vehicle. The result is noticeably safer for your paint and thoroughly cleaner — without you leaving home.",
+  },
 ];
 
 export function HomeFAQSection() {

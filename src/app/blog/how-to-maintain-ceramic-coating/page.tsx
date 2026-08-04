@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
-import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildFAQSchema, buildArticleSchema } from "@/lib/schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTASection } from "@/components/sections/CTASection";
 
@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   description:
     "Your ceramic coating lasts 2–3 years only if you maintain it correctly. This guide covers the right wash method, safe products, and what to avoid — from the professionals who applied it.",
   alternates: { canonical: "/blog/how-to-maintain-ceramic-coating" },
+  openGraph: {
+    title: "How to Maintain a Ceramic Coating Between Washes",
+    description: "Your ceramic coating lasts 2–3 years only if you maintain it correctly. The right wash method, safe products, and what to avoid.",
+    type: "article",
+    publishedTime: "2025-02-08",
+    modifiedTime: "2025-02-08",
+    authors: [BUSINESS.url],
+    tags: ["ceramic coating", "car maintenance", "paint protection", "car detailing"],
+  },
 };
 
 const FAQS = [
@@ -38,25 +47,34 @@ export default function MaintainCeramicPost() {
     { name: "How to Maintain Ceramic Coating", url: `${BUSINESS.url}/blog/how-to-maintain-ceramic-coating` },
   ]);
   const faqSchema = buildFAQSchema(FAQS);
+  const articleSchema = buildArticleSchema({
+    headline: "How to Maintain a Ceramic Coating Between Professional Washes",
+    description: "Your ceramic coating lasts 2–3 years only if you maintain it correctly. This guide covers the right wash method, safe products, and what to avoid — from the professionals who applied it.",
+    datePublished: "2025-02-08",
+    dateModified: "2025-02-08",
+    url: `${BUSINESS.url}/blog/how-to-maintain-ceramic-coating`,
+  });
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Maintain a Ceramic Coating",
+    description: "Steps to maintain a professionally applied ceramic coating to maximise its 2–3 year lifespan.",
+    author: { "@type": "Organization", name: BUSINESS.name },
+    step: [
+      { "@type": "HowToStep", name: "Use the two-bucket wash method", text: "Fill one bucket with shampoo solution and one with clean rinse water. Always rinse your mitt in the clean bucket before loading with fresh shampoo solution." },
+      { "@type": "HowToStep", name: "Use a pH-neutral shampoo", text: "Avoid alkaline-heavy traffic film removers and degreasers that strip ceramic coating chemistry. Use a dedicated pH-neutral shampoo." },
+      { "@type": "HowToStep", name: "Dry with a microfibre drying towel", text: "Pat dry with a large, clean microfibre drying towel rather than a chamois to avoid introducing micro-scratches." },
+      { "@type": "HowToStep", name: "Apply a SiO₂ topper spray every 3–4 months", text: "A ceramic topper spray applied to a wet car after washing refreshes the hydrophobic layer and boosts water beading performance." },
+      { "@type": "HowToStep", name: "Avoid automated car washes", text: "Brushes in automated car washes introduce swirl marks even through a ceramic coating. Stick to hand washing." },
+    ],
+  };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        name: "How to Maintain a Ceramic Coating",
-        description: "Steps to maintain a professionally applied ceramic coating to maximise its 2–3 year lifespan.",
-        author: { "@type": "Organization", name: BUSINESS.name },
-        step: [
-          { "@type": "HowToStep", name: "Use the two-bucket wash method", text: "Fill one bucket with shampoo solution and one with clean rinse water. Always rinse your mitt in the clean bucket before loading with fresh shampoo solution." },
-          { "@type": "HowToStep", name: "Use a pH-neutral shampoo", text: "Avoid alkaline-heavy traffic film removers and degreasers that strip ceramic coating chemistry. Use a dedicated pH-neutral shampoo." },
-          { "@type": "HowToStep", name: "Dry with a microfibre drying towel", text: "Pat dry with a large, clean microfibre drying towel rather than a chamois to avoid introducing micro-scratches." },
-          { "@type": "HowToStep", name: "Apply a SiO₂ topper spray every 3–4 months", text: "A ceramic topper spray applied to a wet car after washing refreshes the hydrophobic layer and boosts water beading performance." },
-          { "@type": "HowToStep", name: "Avoid automated car washes", text: "Brushes in automated car washes introduce swirl marks even through a ceramic coating. Stick to hand washing." },
-        ],
-      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <article className="section-pad pt-32 md:pt-40">
         <div className="section-container max-w-3xl">
@@ -72,7 +90,7 @@ export default function MaintainCeramicPost() {
             <span className="text-xs font-semibold px-2.5 py-1 rounded" style={{ background: "rgba(196,30,58,0.15)", color: "var(--color-accent-400)", border: "1px solid rgba(196,30,58,0.25)" }}>
               How-To
             </span>
-            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
               <Clock size={11} /> 5 min read
             </span>
           </div>

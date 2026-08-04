@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
-import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildFAQSchema, buildArticleSchema } from "@/lib/schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CTASection } from "@/components/sections/CTASection";
 
@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   description:
     "What do you actually get from a £5 drive-through versus a professional mobile detail? We break down the differences in products, results and long-term paint health.",
   alternates: { canonical: "/blog/mobile-detailing-vs-car-wash" },
+  openGraph: {
+    title: "Mobile Car Detailing vs Automated Car Wash: The Real Difference",
+    description: "What do you actually get from a £5 drive-through versus a professional mobile detail? An honest comparison of products, results and long-term paint health.",
+    type: "article",
+    publishedTime: "2025-03-01",
+    modifiedTime: "2025-03-01",
+    authors: [BUSINESS.url],
+    tags: ["mobile car detailing", "car wash", "paint protection", "car valeting"],
+  },
 };
 
 const FAQS = [
@@ -38,11 +47,19 @@ export default function MobileVsCarWashPost() {
     { name: "Mobile Detailing vs Car Wash", url: `${BUSINESS.url}/blog/mobile-detailing-vs-car-wash` },
   ]);
   const faqSchema = buildFAQSchema(FAQS);
+  const articleSchema = buildArticleSchema({
+    headline: "Mobile Car Detailing vs Automated Car Wash: The Real Difference",
+    description: "What do you actually get from a £5 drive-through versus a professional mobile detail? An honest breakdown of differences in products, results and long-term paint health.",
+    datePublished: "2025-03-01",
+    dateModified: "2025-03-01",
+    url: `${BUSINESS.url}/blog/mobile-detailing-vs-car-wash`,
+  });
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <article className="section-pad pt-32 md:pt-40">
         <div className="section-container max-w-3xl">
@@ -58,7 +75,7 @@ export default function MobileVsCarWashPost() {
             <span className="text-xs font-semibold px-2.5 py-1 rounded" style={{ background: "rgba(196,30,58,0.15)", color: "var(--color-accent-400)", border: "1px solid rgba(196,30,58,0.25)" }}>
               Comparison
             </span>
-            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+            <span className="flex items-center gap-1 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
               <Clock size={11} /> 5 min read
             </span>
           </div>

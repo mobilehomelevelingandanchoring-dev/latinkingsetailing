@@ -130,7 +130,7 @@ export function BookingForm() {
       {/* Row 2: Email */}
       <div className="form-field">
         <label htmlFor="email" className="form-label">
-          Email <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>(optional)</span>
+          Email <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>(optional)</span>
         </label>
         <input
           id="email"
@@ -176,7 +176,7 @@ export function BookingForm() {
       <div className="form-field">
         <label htmlFor="vehicle" className="form-label">
           Vehicle make & model{" "}
-          <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>(optional)</span>
+          <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>(optional)</span>
         </label>
         <input
           id="vehicle"
@@ -192,7 +192,7 @@ export function BookingForm() {
         <div className="form-field">
           <label htmlFor="preferred_date" className="form-label">
             Preferred date{" "}
-            <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>(optional)</span>
+            <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>(optional)</span>
           </label>
           <input
             id="preferred_date"
@@ -207,7 +207,7 @@ export function BookingForm() {
         <div className="form-field">
           <label htmlFor="preferred_time" className="form-label">
             Preferred time{" "}
-            <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>(optional)</span>
+            <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>(optional)</span>
           </label>
           <select id="preferred_time" className="form-input" {...register("preferred_time")}>
             <option value="">Any time…</option>
@@ -222,7 +222,7 @@ export function BookingForm() {
       <div className="form-field">
         <label htmlFor="notes" className="form-label">
           Anything else?{" "}
-          <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>(optional)</span>
+          <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>(optional)</span>
         </label>
         <textarea
           id="notes"
@@ -267,16 +267,16 @@ export function BookingForm() {
         {isPending ? (
           <>
             <Loader2 size={18} className="animate-spin" />
-            Sending request…
+            Sending your request…
           </>
         ) : (
-          "Request Free Quote"
+          "Send My Quote Request"
         )}
       </button>
 
       <p
         className="text-center text-xs"
-        style={{ color: "rgba(255,255,255,0.35)" }}
+        style={{ color: "rgba(255,255,255,0.5)" }}
       >
         No payment required — we&apos;ll call to confirm and quote before any work starts.
       </p>

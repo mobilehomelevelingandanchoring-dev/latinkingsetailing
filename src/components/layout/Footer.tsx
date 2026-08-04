@@ -10,6 +10,7 @@ const SERVICE_LINKS = [
   { label: "Paint Correction", href: "/services/paint-correction" },
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },
   { label: "Paint Protection Film", href: "/services/paint-protection-film" },
+  { label: "Machine Polishing", href: "/services/machine-polishing" },
   { label: "Interior Detailing", href: "/services/interior-detailing" },
   { label: "Exterior Detailing", href: "/services/exterior-detailing" },
   { label: "Deep Cleaning", href: "/services/deep-cleaning" },
@@ -32,7 +33,10 @@ const COMPANY_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Reviews", href: "/reviews" },
+  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export function Footer() {
@@ -52,7 +56,7 @@ export function Footer() {
             <p className="text-sm leading-relaxed mb-2" style={{ color: "rgba(255,255,255,0.55)" }}>
               Premium mobile car detailing, ceramic coating and paint correction across Urmston and Greater Manchester.
             </p>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(255,255,255,0.55)" }}>
               Trusted mobile car wash and valet alternative for Urmston, Trafford and beyond — we come to you.
             </p>
             <div className="flex gap-3">
@@ -60,31 +64,31 @@ export function Footer() {
                 href={BUSINESS.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full flex items-center justify-center footer-link transition-colors"
+                className="w-11 h-11 rounded-full flex items-center justify-center footer-link transition-colors"
                 style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}
                 aria-label="Instagram"
               >
-                <InstagramIcon size={16} />
+                <InstagramIcon size={18} />
               </a>
               <a
                 href={BUSINESS.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full flex items-center justify-center footer-link transition-colors"
+                className="w-11 h-11 rounded-full flex items-center justify-center footer-link transition-colors"
                 style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}
                 aria-label="Facebook"
               >
-                <FacebookIcon size={16} />
+                <FacebookIcon size={18} />
               </a>
               <a
                 href={BUSINESS.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full flex items-center justify-center footer-link transition-colors"
+                className="w-11 h-11 rounded-full flex items-center justify-center footer-link transition-colors"
                 style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)" }}
                 aria-label="TikTok"
               >
-                <TikTokIcon size={16} />
+                <TikTokIcon size={18} />
               </a>
             </div>
           </div>
@@ -131,14 +135,14 @@ export function Footer() {
             </h3>
             <ul className="space-y-4 mb-6">
               <li>
-                <a href={`tel:${BUSINESS.phone}`} className="flex items-start gap-3 text-sm footer-link">
-                  <Phone size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-accent-500)" }} />
+                <a href={`tel:${BUSINESS.phone}`} className="flex items-center gap-3 text-sm footer-link min-h-[44px]">
+                  <Phone size={14} className="flex-shrink-0" style={{ color: "var(--color-accent-500)" }} />
                   {BUSINESS.phoneDisplay}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${BUSINESS.email}`} className="flex items-start gap-3 text-sm footer-link">
-                  <Mail size={14} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-accent-500)" }} />
+                <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-3 text-sm footer-link min-h-[44px]">
+                  <Mail size={14} className="flex-shrink-0" style={{ color: "var(--color-accent-500)" }} />
                   <span className="break-all">{BUSINESS.email}</span>
                 </a>
               </li>
@@ -168,10 +172,10 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t" style={{ borderColor: "var(--color-border)" }}>
         <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
             © {new Date().getFullYear()} {BUSINESS.name}. All rights reserved. Mobile car detailing in Urmston, Manchester.
           </p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.25)" }}>
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
             {BUSINESS.address.full}
           </p>
         </div>

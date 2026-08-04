@@ -1,11 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
+import { submitQuote } from "@/app/book/actions";
 
 const SERVICES = BUSINESS.services.map((s) => s.name);
-const VEHICLE_TYPES = ["Hatchback", "Saloon", "Estate", "SUV / 4x4", "MPV / People Carrier", "Coupe", "Convertible", "Van", "Motorbike", "Luxury / Exotic", "Other"];
+const VEHICLE_TYPES = [
+  "Hatchback", "Saloon", "Estate", "SUV / 4x4", "MPV / People Carrier",
+  "Coupe", "Convertible", "Van", "Motorbike", "Luxury / Exotic", "Other",
+];
 
 interface FormData {
   name: string;
@@ -18,19 +22,15 @@ interface FormData {
 }
 
 const INITIAL: FormData = {
-  name: "",
-  phone: "",
-  postcode: "",
-  vehicleType: "",
-  vehicleMakeModel: "",
-  service: "",
-  message: "",
+  name: "", phone: "", postcode: "", vehicleType: "",
+  vehicleMakeModel: "", service: "", message: "",
 };
 
 export function QuoteForm() {
   const [form, setForm] = useState<FormData>(INITIAL);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -40,11 +40,15 @@ export function QuoteForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
     setSubmitting(true);
-    // In production: POST to /api/quote or use form service (Formspree, etc.)
-    await new Promise((r) => setTimeout(r, 800));
+    const res = await submitQuote(form);
     setSubmitting(false);
-    setSubmitted(true);
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError(res.error);
+    }
   };
 
   if (submitted) {
@@ -94,9 +98,9 @@ export function QuoteForm() {
 
       <div className="grid sm:grid-cols-2 gap-5 !mt-6">
         <div className="form-field">
-          <label htmlFor="name" className="form-label">Your name *</label>
+          <label htmlFor="q-name" className="form-label">Your name *</label>
           <input
-            id="name"
+            id="q-name"
             name="name"
             type="text"
             autoComplete="name"
@@ -108,9 +112,9 @@ export function QuoteForm() {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="phone" className="form-label">Phone number *</label>
+          <label htmlFor="q-phone" className="form-label">Phone number *</label>
           <input
-            id="phone"
+            id="q-phone"
             name="phone"
             type="tel"
             inputMode="tel"
@@ -126,9 +130,9 @@ export function QuoteForm() {
 
       <div className="grid sm:grid-cols-2 gap-5">
         <div className="form-field">
-          <label htmlFor="postcode" className="form-label">Your postcode *</label>
+          <label htmlFor="q-postcode" className="form-label">Your postcode *</label>
           <input
-            id="postcode"
+            id="q-postcode"
             name="postcode"
             type="text"
             inputMode="text"
@@ -142,9 +146,9 @@ export function QuoteForm() {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="vehicleType" className="form-label">Vehicle type *</label>
+          <label htmlFor="q-vehicleType" className="form-label">Vehicle type *</label>
           <select
-            id="vehicleType"
+            id="q-vehicleType"
             name="vehicleType"
             required
             value={form.vehicleType}
@@ -160,22 +164,22 @@ export function QuoteForm() {
       </div>
 
       <div className="form-field">
-        <label htmlFor="vehicleMakeModel" className="form-label">Vehicle make & model</label>
+        <label htmlFor="q-vehicleMakeModel" className="form-label">Vehicle make &amp; model</label>
         <input
-          id="vehicleMakeModel"
+          id="q-vehicleMakeModel"
           name="vehicleMakeModel"
           type="text"
           value={form.vehicleMakeModel}
           onChange={handleChange}
-          placeholder="e.g. BMW 3 Series, Audi Q5, Ferrari Purosangue…"
+          placeholder="e.g. BMW 3 Series, Audi Q5…"
           className="form-input"
         />
       </div>
 
       <div className="form-field">
-        <label htmlFor="service" className="form-label">Service interested in *</label>
+        <label htmlFor="q-service" className="form-label">Service interested in *</label>
         <select
-          id="service"
+          id="q-service"
           name="service"
           required
           value={form.service}
@@ -191,9 +195,9 @@ export function QuoteForm() {
       </div>
 
       <div className="form-field">
-        <label htmlFor="message" className="form-label">Anything else? (optional)</label>
+        <label htmlFor="q-message" className="form-label">Anything else? (optional)</label>
         <textarea
-          id="message"
+          id="q-message"
           name="message"
           value={form.message}
           onChange={handleChange}
@@ -203,6 +207,22 @@ export function QuoteForm() {
         />
       </div>
 
+      {error && (
+        <div
+          className="flex items-start gap-3 p-4 rounded-lg"
+          style={{ background: "rgba(196,30,58,0.1)", border: "1px solid rgba(196,30,58,0.3)" }}
+          role="alert"
+        >
+          <AlertCircle size={18} style={{ color: "var(--color-accent-400)", flexShrink: 0, marginTop: "2px" }} />
+          <div>
+            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0 }}>{error}</p>
+            <a href={`tel:${BUSINESS.phone}`} style={{ color: "var(--color-accent-400)", fontSize: "0.875rem" }}>
+              Call us directly: {BUSINESS.phoneDisplay}
+            </a>
+          </div>
+        </div>
+      )}
+
       <button
         type="submit"
         disabled={submitting}
@@ -211,7 +231,7 @@ export function QuoteForm() {
       >
         {submitting ? (
           <>
-            <span className="animate-spin inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full" />
+            <Loader2 size={18} className="animate-spin" />
             Sending…
           </>
         ) : (

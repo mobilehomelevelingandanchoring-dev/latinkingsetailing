@@ -59,7 +59,7 @@ export function Logo({ size = "md", className = "", asLink = true }: LogoProps) 
             fontFamily: "var(--font-barlow-condensed)",
             fontWeight: 800,
             fontSize: tagFs,
-            color: "#C41E3A",
+            color: "var(--color-accent-400)",
             letterSpacing: "0.22em",
             marginTop: "3px",
           }}

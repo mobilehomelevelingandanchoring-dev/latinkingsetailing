@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, CalendarCheck } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 
 export function MobileCTABar() {
@@ -10,7 +10,7 @@ export function MobileCTABar() {
       <a
         href={`tel:${BUSINESS.phone}`}
         className="btn btn-secondary"
-        aria-label={`Call ${BUSINESS.phoneDisplay}`}
+        aria-label={`Call us on ${BUSINESS.phoneDisplay}`}
       >
         <Phone size={16} aria-hidden="true" />
         Call Now
@@ -18,9 +18,9 @@ export function MobileCTABar() {
       <Link
         href="/contact"
         className="btn btn-primary"
-        aria-label="Get a free quote"
+        aria-label="Get a free quote online"
       >
-        <MessageCircle size={16} aria-hidden="true" />
+        <CalendarCheck size={16} aria-hidden="true" />
         Free Quote
       </Link>
     </div>
