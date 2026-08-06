@@ -50,7 +50,7 @@ const BENEFITS = [
   },
   {
     title: "Scratch resistance",
-    desc: "Significantly reduces swirl marks from washing and minor surface contact. Does not prevent deep scratches — PPF handles that.",
+    desc: "Significantly reduces swirl marks from washing and minor surface contact. Does not prevent deep scratches or stone chips.",
   },
   {
     title: "All vehicle types",
@@ -330,10 +330,7 @@ export default function CeramicCoatingManchesterPage() {
             <Link href="/services/paint-correction" className="btn btn-secondary text-sm">
               Paint Correction Manchester
             </Link>
-            <Link href="/services/paint-protection-film" className="btn btn-secondary text-sm">
-              Paint Protection Film
-            </Link>
-            <Link href="/blog/ceramic-coating-vs-wax" className="btn btn-secondary text-sm">
+<Link href="/blog/ceramic-coating-vs-wax" className="btn btn-secondary text-sm">
               Ceramic Coating vs Wax Guide
             </Link>
             <Link href="/blog/how-to-maintain-ceramic-coating" className="btn btn-secondary text-sm">

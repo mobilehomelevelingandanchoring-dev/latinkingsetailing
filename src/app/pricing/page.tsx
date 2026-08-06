@@ -175,23 +175,6 @@ const PRICE_TIERS = [
     href: "/services/engine-bay-cleaning",
     badge: null,
   },
-  {
-    slug: "paint-protection-film",
-    name: "Paint Protection Film (PPF)",
-    priceFrom: 250,
-    duration: "4–8 hours",
-    tagline: "Physical stone chip protection",
-    description:
-      "Self-healing polyurethane film for high-impact areas — bonnet, bumper, mirrors and sills. Optically clear once installed.",
-    includes: [
-      "Paint decontamination before application",
-      "PPF cutting and installation",
-      "Edge sealing for durability",
-      "Post-installation inspection",
-    ],
-    href: "/services/paint-protection-film",
-    badge: null,
-  },
 ];
 
 const FAQS = [

@@ -132,7 +132,7 @@ const FAQS = [
       {
         question: "Does ceramic coating prevent scratches?",
         answer:
-          "Ceramic coating adds scratch resistance to the paint surface but does not make it scratch-proof. It significantly reduces the likelihood of light swirl marks from washing and minor surface contact, but deep scratches and stone chips can still occur. Paint protection film (PPF) provides physical impact protection.",
+          "Ceramic coating adds scratch resistance to the paint surface but does not make it scratch-proof. It significantly reduces the likelihood of light swirl marks from washing and minor surface contact, but deep scratches and stone chips can still penetrate through.",
       },
     ],
   },

@@ -9,8 +9,7 @@ const SERVICE_LINKS = [
   { label: "Car Detailing", href: "/services/car-detailing" },
   { label: "Paint Correction", href: "/services/paint-correction" },
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },
-  { label: "Paint Protection Film", href: "/services/paint-protection-film" },
-  { label: "Machine Polishing", href: "/services/machine-polishing" },
+{ label: "Machine Polishing", href: "/services/machine-polishing" },
   { label: "Interior Detailing", href: "/services/interior-detailing" },
   { label: "Exterior Detailing", href: "/services/exterior-detailing" },
   { label: "Deep Cleaning", href: "/services/deep-cleaning" },
@@ -175,9 +174,17 @@ export function Footer() {
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
             © {new Date().getFullYear()} {BUSINESS.name}. All rights reserved. Mobile car detailing in Urmston, Manchester.
           </p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
-            {BUSINESS.address.full}
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
+              {BUSINESS.address.full}
+            </p>
+            <Link
+              href="/admin/login"
+              className="text-xs text-white/20 hover:text-white/45 transition-colors"
+            >
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

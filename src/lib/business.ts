@@ -141,17 +141,6 @@ export const BUSINESS = {
       icon: "shield",
     },
     {
-      slug: "paint-protection-film",
-      name: "Paint Protection Film",
-      shortName: "PPF",
-      tagline: "Invisible armour against stone chips and road damage",
-      description:
-        "Self-healing polyurethane film applied to high-impact areas (bonnet, front bumper, mirrors, sills) or full-vehicle wraps for maximum protection against stone chips, road debris and minor abrasions — completely invisible once fitted.",
-      priceFrom: 250,
-      duration: "4–8 hours",
-      icon: "layers",
-    },
-    {
       slug: "interior-detailing",
       name: "Interior Detailing",
       shortName: "Interior Detail",

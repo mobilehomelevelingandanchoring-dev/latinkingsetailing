@@ -9,7 +9,7 @@ import { buildLocalBusinessSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Car Detailing Services — Mobile Valeting, Ceramic Coating, Paint Correction",
   description:
-    "Complete range of mobile car detailing services in Urmston and Greater Manchester — valeting, paint correction, ceramic coating, PPF, interior and exterior detailing. We come to you.",
+    "Complete range of mobile car detailing services in Urmston and Greater Manchester — valeting, paint correction, ceramic coating, machine polishing, interior and exterior detailing. We come to you.",
   alternates: { canonical: "/services" },
 };
 

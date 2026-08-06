@@ -28,8 +28,7 @@ const SERVICES = [
   { name: "Mobile Valeting", href: "/services/mobile-valeting", price: 40, duration: "1.5–3 hrs", description: "Mini valet, full valet — we come to your door." },
   { name: "Interior Detailing", href: "/services/interior-detailing", price: 80, duration: "2–4 hrs", description: "Steam clean, hot water extraction, odour elimination." },
   { name: "Machine Polishing", href: "/services/machine-polishing", price: 150, duration: "4–8 hrs", description: "Restore gloss and clarity to any paint type." },
-  { name: "Paint Protection Film", href: "/services/paint-protection-film", price: 250, duration: "4–8 hrs", description: "Self-healing film against stone chips & road damage." },
-  { name: "Engine Bay Cleaning", href: "/services/engine-bay-cleaning", price: 50, duration: "45–90 min", description: "Safe steam & degreaser engine clean at your location." },
+{ name: "Engine Bay Cleaning", href: "/services/engine-bay-cleaning", price: 50, duration: "45–90 min", description: "Safe steam & degreaser engine clean at your location." },
 ];
 
 const MANCHESTER_AREAS = [

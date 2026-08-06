@@ -35,11 +35,6 @@ const SERVICE_META: Record<string, { title: string; description: string }> = {
     description:
       "Best ceramic coating for cars in Manchester & Urmston — professional SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Includes paint correction prep. From £350. Book now.",
   },
-  "paint-protection-film": {
-    title: "Paint Protection Film Manchester & Urmston | PPF Near Me",
-    description:
-      "Paint protection film (PPF) in Manchester & Urmston. Self-healing film guards against stone chips, scratches & road debris — optically clear. Mobile service. Call 07482 225323.",
-  },
   "interior-detailing": {
     title: "Interior Car Detailing Manchester | Car Seat Wash & Upholstery Clean Near Me",
     description:
@@ -96,12 +91,6 @@ const SERVICE_CTA: Record<
     description: "Professional SiO₂ ceramic coating lasts 2–3 years. Full decontamination and polish prep always included. Applied mobile at your location.",
     heroBtn: "Book Ceramic Coating",
     cardBtn: "Get Coating Quote",
-  },
-  "paint-protection-film": {
-    headline: "Stop Stone Chips Before They Start",
-    description: "Self-healing PPF shields your paintwork from road debris, chips and scratches. Optically clear and virtually invisible once installed.",
-    heroBtn: "Book PPF Installation",
-    cardBtn: "Get My PPF Quote",
   },
   "interior-detailing": {
     headline: "Transform Your Interior — Deep Clean at Your Door",
@@ -338,36 +327,7 @@ const SERVICE_CONTENT: Record<
       },
     ],
     relatedAreas: ["urmston", "altrincham", "sale", "didsbury", "chorlton-cum-hardy"],
-    relatedServices: ["paint-correction", "paint-protection-film", "exterior-detailing"],
-  },
-  "paint-protection-film": {
-    longDescription: [
-      "Paint protection film (PPF) is a self-healing polyurethane film applied to the vehicle's paintwork to protect against stone chips, road debris, minor abrasions, insect etching and bird dropping damage. Unlike ceramic coating, PPF provides a physical barrier rather than a chemical one — making it the most comprehensive protection available for high-impact areas.",
-      "Latin King Detailing offers PPF application to key impact zones — bonnet leading edge, front bumper, mirrors and sills — as well as full-vehicle wraps for maximum coverage. The film is optically clear once installed and is virtually invisible on the vehicle.",
-    ],
-    includes: [
-      "Paint decontamination before application",
-      "PPF film cutting and installation",
-      "Edge sealing for durability",
-      "Post-installation inspection",
-    ],
-    notIncludes: [
-      "Paint correction of existing damage before PPF (available as add-on)",
-    ],
-    faqs: [
-      {
-        question: "What is paint protection film?",
-        answer:
-          "Paint protection film is a self-healing polyurethane film bonded to painted surfaces to protect against stone chips, road grit, minor scratches and environmental damage. It is the most effective physical paint protection available.",
-      },
-      {
-        question: "What is the difference between PPF and ceramic coating?",
-        answer:
-          "Paint protection film (PPF) provides physical protection against stone chips and abrasion. Ceramic coating provides chemical protection, UV resistance and hydrophobic properties. The two are complementary — many high-value vehicle owners choose to apply ceramic coating over PPF for the combined benefits of physical protection and easy cleaning.",
-      },
-    ],
-    relatedAreas: ["urmston", "altrincham", "sale", "didsbury"],
-    relatedServices: ["ceramic-coating", "paint-correction", "exterior-detailing"],
+    relatedServices: ["paint-correction", "machine-polishing", "exterior-detailing"],
   },
   "interior-detailing": {
     longDescription: [

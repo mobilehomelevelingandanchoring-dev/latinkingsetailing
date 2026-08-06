@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Settings } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BUSINESS } from "@/lib/business";
 import { Logo } from "@/components/ui/Logo";
@@ -24,8 +24,7 @@ const SERVICE_LINKS = [
   { label: "Car Detailing", href: "/services/car-detailing" },
   { label: "Paint Correction", href: "/services/paint-correction" },
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },
-  { label: "PPF", href: "/services/paint-protection-film" },
-  { label: "Interior Detailing", href: "/services/interior-detailing" },
+{ label: "Interior Detailing", href: "/services/interior-detailing" },
   { label: "Exterior Detailing", href: "/services/exterior-detailing" },
   { label: "Machine Polishing", href: "/services/machine-polishing" },
   { label: "Deep Cleaning", href: "/services/deep-cleaning" },
@@ -151,6 +150,13 @@ export function Header() {
               <Phone size={14} />
               {BUSINESS.phoneDisplay}
             </a>
+            <Link
+              href="/admin/login"
+              title="Admin Panel"
+              className="p-2 rounded-md text-white/25 hover:text-white/60 hover:bg-white/[0.05] transition-colors"
+            >
+              <Settings size={15} />
+            </Link>
             <Link href="/contact" className="btn btn-primary text-sm py-2.5 px-5">
               Get Free Quote
             </Link>
@@ -200,6 +206,15 @@ export function Header() {
                 </a>
                 <Link href="/contact" className="btn btn-primary justify-center text-base">
                   Get Free Quote
+                </Link>
+              </div>
+              <div className="pt-6 border-t border-white/[0.05]">
+                <Link
+                  href="/admin/login"
+                  className="flex items-center gap-2 py-2 px-1 text-xs text-white/25 hover:text-white/50 transition-colors"
+                >
+                  <Settings size={12} />
+                  Admin Panel
                 </Link>
               </div>
             </nav>

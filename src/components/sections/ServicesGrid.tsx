@@ -8,7 +8,6 @@ import {
   Zap,
   RotateCw,
   Shield,
-  Layers,
   Sofa,
   Droplets,
   Star,
@@ -24,7 +23,6 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   zap: <Zap size={22} />,
   "rotate-cw": <RotateCw size={22} />,
   shield: <Shield size={22} />,
-  layers: <Layers size={22} />,
   sofa: <Sofa size={22} />,
   droplets: <Droplets size={22} />,
   star: <Star size={22} />,
@@ -37,7 +35,6 @@ const HOMEPAGE_TAGLINES: Record<string, string> = {
   "paint-correction": "Swirl mark, scratch & oxidation removal by machine polishing pros",
   "machine-polishing": "Restore gloss, depth and clarity — professional dual-action polish",
   "ceramic-coating": "Permanent SiO₂ ceramic coat — hydrophobic liquid-glass shield",
-  "paint-protection-film": "Self-healing PPF — invisible stone chip armour fitted at your location",
 };
 
 export function ServicesGrid({ limit }: { limit?: number }) {

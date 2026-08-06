@@ -25,7 +25,6 @@ export const SERVICES = [
   "Paint Correction",
   "Machine Polishing",
   "Ceramic Coating",
-  "Paint Protection Film",
   "Interior Detailing",
   "Exterior Detailing",
   "Deep Cleaning",
