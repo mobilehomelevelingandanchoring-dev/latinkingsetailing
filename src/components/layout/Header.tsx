@@ -26,7 +26,7 @@ const SERVICE_LINKS = [
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },
 { label: "Interior Detailing", href: "/services/interior-detailing" },
   { label: "Exterior Detailing", href: "/services/exterior-detailing" },
-  { label: "Machine Polishing", href: "/services/machine-polishing" },
+  { label: "Machine Polishing / Paint Enhancement", href: "/services/machine-polishing" },
   { label: "Deep Cleaning", href: "/services/deep-cleaning" },
   { label: "Engine Bay Cleaning", href: "/services/engine-bay-cleaning" },
 ];

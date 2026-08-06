@@ -120,7 +120,7 @@ export const BUSINESS = {
     },
     {
       slug: "machine-polishing",
-      name: "Machine Polishing",
+      name: "Machine Polishing / Paint Enhancement",
       shortName: "Machine Polish",
       tagline: "Restore depth, gloss and clarity to any paintwork",
       description:

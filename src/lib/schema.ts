@@ -103,6 +103,7 @@ export function buildLocalBusinessSchema() {
       "Ceramic Coating",
       "Paint Correction",
       "Machine Polishing",
+      "Paint Enhancement",
       "Car Valeting",
 "Interior Detailing",
       "Engine Bay Cleaning",

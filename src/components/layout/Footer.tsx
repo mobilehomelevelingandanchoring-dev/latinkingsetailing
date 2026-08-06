@@ -9,7 +9,7 @@ const SERVICE_LINKS = [
   { label: "Car Detailing", href: "/services/car-detailing" },
   { label: "Paint Correction", href: "/services/paint-correction" },
   { label: "Ceramic Coating", href: "/services/ceramic-coating" },
-{ label: "Machine Polishing", href: "/services/machine-polishing" },
+  { label: "Machine Polishing / Paint Enhancement", href: "/services/machine-polishing" },
   { label: "Interior Detailing", href: "/services/interior-detailing" },
   { label: "Exterior Detailing", href: "/services/exterior-detailing" },
   { label: "Deep Cleaning", href: "/services/deep-cleaning" },

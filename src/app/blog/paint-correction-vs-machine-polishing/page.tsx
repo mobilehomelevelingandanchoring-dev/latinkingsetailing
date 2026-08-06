@@ -115,7 +115,7 @@ export default function PaintCorrectionVsMachinePolishingPage() {
                 <div className="grid sm:grid-cols-2 gap-5">
                   {[
                     {
-                      name: "Machine Polishing",
+                      name: "Machine Polishing / Paint Enhancement",
                       also: "Enhancement polish",
                       removes: "Mild swirls, light haze, minor oxidation",
                       adds: "Gloss, clarity, depth",

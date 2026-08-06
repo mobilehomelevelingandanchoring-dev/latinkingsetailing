@@ -123,7 +123,7 @@ const PRICE_TIERS = [
   },
   {
     slug: "machine-polishing",
-    name: "Machine Polishing",
+    name: "Machine Polishing / Paint Enhancement",
     priceFrom: 150,
     duration: "4–8 hours",
     tagline: "Restore gloss and clarity",

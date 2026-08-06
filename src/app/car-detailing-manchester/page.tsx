@@ -27,7 +27,7 @@ const SERVICES = [
   { name: "Paint Correction", href: "/services/paint-correction", price: 200, duration: "6–12 hrs", description: "Machine removal of swirl marks, scratches & oxidation." },
   { name: "Mobile Valeting", href: "/services/mobile-valeting", price: 40, duration: "1.5–3 hrs", description: "Mini valet, full valet — we come to your door." },
   { name: "Interior Detailing", href: "/services/interior-detailing", price: 80, duration: "2–4 hrs", description: "Steam clean, hot water extraction, odour elimination." },
-  { name: "Machine Polishing", href: "/services/machine-polishing", price: 150, duration: "4–8 hrs", description: "Restore gloss and clarity to any paint type." },
+  { name: "Machine Polishing / Paint Enhancement", href: "/services/machine-polishing", price: 150, duration: "4–8 hrs", description: "Restore gloss and clarity to any paint type." },
 { name: "Engine Bay Cleaning", href: "/services/engine-bay-cleaning", price: 50, duration: "45–90 min", description: "Safe steam & degreaser engine clean at your location." },
 ];
 

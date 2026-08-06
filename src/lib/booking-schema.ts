@@ -23,7 +23,7 @@ export const SERVICES = [
   "Mobile Valeting",
   "Car Detailing",
   "Paint Correction",
-  "Machine Polishing",
+  "Machine Polishing / Paint Enhancement",
   "Ceramic Coating",
   "Interior Detailing",
   "Exterior Detailing",
