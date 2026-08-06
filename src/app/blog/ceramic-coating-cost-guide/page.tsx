@@ -27,7 +27,7 @@ const FAQS = [
   {
     question: "How much does ceramic coating cost in the UK?",
     answer:
-      "Professional ceramic coating in the UK costs between £200 and £2,000+ depending on vehicle size, paint condition and the grade of coating applied. A professional coating on a standard-sized car from a reputable mobile detailer in Manchester starts from £350 at Latin King Detailing. This always includes full paint decontamination and machine polishing before application.",
+      "Professional ceramic coating in the UK costs between £200 and £2,000+ depending on vehicle size, paint condition and the grade of coating applied. A professional coating on a standard-sized car from a reputable mobile detailer in Manchester starts from £250 at Latin King Detailing. This always includes full paint decontamination and machine polishing before application.",
   },
   {
     question: "Is ceramic coating worth it in the UK?",
@@ -124,7 +124,7 @@ export default function CeramicCoatingCostGuidePage() {
                     <tbody>
                       {[
                         ["Small / Hatchback", "£250–£500", "Prep, polish and coating"],
-                        ["Medium / Saloon", "£350–£700", "Prep, polish and coating"],
+                        ["Medium / Saloon", "£250–£700", "Prep, polish and coating"],
                         ["Large / SUV", "£500–£1,000", "Prep, polish and coating"],
                         ["Prestige / Exotic", "£800–£2,000+", "Full correction + premium coating"],
                       ].map(([size, price, inc], i) => (
@@ -145,7 +145,7 @@ export default function CeramicCoatingCostGuidePage() {
                   </table>
                 </div>
                 <p className="text-xs mt-3" style={{ color: "rgba(255,255,255,0.4)" }}>
-                  Prices based on professional mobile detailing in Manchester / Greater Manchester. Latin King Detailing starts from £350.
+                  Prices based on professional mobile detailing in Manchester / Greater Manchester. Latin King Detailing starts from £250.
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function CeramicCoatingCostGuidePage() {
                   Manchester is one of the UK&apos;s wettest cities, with frequent rain throughout the year and road salt in winter. Without protection, these conditions mean the paint accumulates contamination rapidly between washes. A ceramic-coated car repels water and grime significantly more effectively — the hydrophobic surface causes water to bead and sheet off, carrying contaminants with it.
                 </p>
                 <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
-                  Compared to wax: carnauba wax lasts 4–8 weeks and costs £30–£100 per application (professionally applied). Over a 2–3 year period, you would spend £300–£800+ on wax applications that collectively provide less protection than a single £350+ ceramic coating. The maths favour ceramic coating for most drivers who use their car regularly in a Manchester climate.
+                  Compared to wax: carnauba wax lasts 4–8 weeks and costs £30–£100 per application (professionally applied). Over a 2–3 year period, you would spend £300–£800+ on wax applications that collectively provide less protection than a single £250+ ceramic coating. The maths favour ceramic coating for most drivers who use their car regularly in a Manchester climate.
                 </p>
               </div>
 
@@ -293,7 +293,7 @@ export default function CeramicCoatingCostGuidePage() {
       <CTASection
         eyebrow="Professional Ceramic Coating — Manchester"
         title="Get Your Ceramic Coating Quote Today"
-        description="Professional SiO₂ ceramic coating from £350. Full paint decontamination and machine polish always included. Fixed price confirmed before we start."
+        description="Professional SiO₂ ceramic coating from £250. Full paint decontamination and machine polish always included. Fixed price confirmed before we start."
         primaryCTA="Get My Coating Quote"
       />
     </>

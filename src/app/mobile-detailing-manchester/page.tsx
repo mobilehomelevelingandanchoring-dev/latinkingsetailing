@@ -76,7 +76,7 @@ const FAQS = [
   {
     question: "How much does mobile car detailing cost in Manchester?",
     answer:
-      "Mobile mini valeting in Manchester starts from £40. A mobile full valet starts from £80. Full car detailing packages start from £120. Paint correction from £200. Ceramic coating from £350. All prices are fixed and confirmed before any work begins.",
+      "Mobile mini valeting in Manchester starts from £40. A mobile full valet starts from £80. Full car detailing packages start from £120. Paint correction from £200. Ceramic coating from £250. All prices are fixed and confirmed before any work begins.",
   },
   {
     question: "Is mobile car detailing as good as a garage service?",

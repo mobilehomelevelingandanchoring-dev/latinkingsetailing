@@ -110,8 +110,8 @@ export default function CeramicVsWaxPost() {
               ["UV protection", "Basic", "Strong"],
               ["Chemical resistance", "Low", "High"],
               ["Application", "DIY-friendly", "Professional recommended"],
-              ["Cost (initial)", "£10–£60 per product", "£350+ professional application"],
-              ["Cost over 3 years", "£60–£180+ (repeated)", "£350 (once)"],
+              ["Cost (initial)", "£10–£60 per product", "£250+ professional application"],
+              ["Cost over 3 years", "£60–£180+ (repeated)", "£250 (once)"],
             ].map(([factor, wax, ceramic]) => (
               <div
                 key={factor}

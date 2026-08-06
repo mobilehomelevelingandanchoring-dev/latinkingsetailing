@@ -122,7 +122,7 @@ const FAQS = [
       {
         question: "How much does ceramic coating cost in Manchester?",
         answer:
-          "Professional ceramic coating in Manchester starts from £350 at Latin King Detailing. The exact price depends on vehicle size and paint condition. Paint correction is recommended before coating application to ensure the best possible result — this is always included in our coating packages.",
+          "Professional ceramic coating in Manchester starts from £250 at Latin King Detailing. The exact price depends on vehicle size and paint condition. Paint correction is recommended before coating application to ensure the best possible result — this is always included in our coating packages.",
       },
       {
         question: "What is the difference between ceramic coating and wax?",
@@ -167,7 +167,7 @@ const FAQS = [
       {
         question: "How much does mobile car valeting in Manchester cost?",
         answer:
-          "A mobile mini valet starts from £40. A full valet starts from £80–£100 depending on vehicle size. Full car detailing packages start from £120. Paint correction starts from £200. Ceramic coating packages start from £350. All prices are confirmed as a fixed quote before any work begins.",
+          "A mobile mini valet starts from £40. A full valet starts from £80–£100 depending on vehicle size. Full car detailing packages start from £120. Paint correction starts from £200. Ceramic coating packages start from £250. All prices are confirmed as a fixed quote before any work begins.",
       },
       {
         question: "Do you offer payment plans?",

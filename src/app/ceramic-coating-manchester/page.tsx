@@ -10,12 +10,12 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 export const metadata: Metadata = {
   title: "Ceramic Coating Manchester | Best SiO₂ Nano Coating Near Me | Latin King Detailing",
   description:
-    "Professional ceramic coating in Manchester — SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Full paint correction prep included. Mobile service at your door. From £350. Call 07482 225323.",
+    "Professional ceramic coating in Manchester — SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Full paint correction prep included. Mobile service at your door. From £250. Call 07482 225323.",
   alternates: { canonical: "/ceramic-coating-manchester" },
   openGraph: {
     title: "Ceramic Coating Manchester | Latin King Detailing",
     description:
-      "Professional SiO₂ ceramic coating in Manchester. Lasts 2–3 years. Hydrophobic, scratch-resistant, UV-resistant. Paint prep included. From £350.",
+      "Professional SiO₂ ceramic coating in Manchester. Lasts 2–3 years. Hydrophobic, scratch-resistant, UV-resistant. Paint prep included. From £250.",
     type: "website",
     url: `${BUSINESS.url}/ceramic-coating-manchester`,
   },
@@ -62,7 +62,7 @@ const FAQS = [
   {
     question: "How much does ceramic coating cost in Manchester?",
     answer:
-      "Professional ceramic coating in Manchester starts from £350 at Latin King Detailing. The exact price depends on vehicle size and paint condition. Paint correction is recommended before coating — this is always included in our ceramic coating packages. We confirm a fixed price before any work begins.",
+      "Professional ceramic coating in Manchester starts from £250 at Latin King Detailing. The exact price depends on vehicle size and paint condition. Paint correction is recommended before coating — this is always included in our ceramic coating packages. We confirm a fixed price before any work begins.",
   },
   {
     question: "How long does ceramic coating last in Manchester?",
@@ -109,7 +109,7 @@ export default function CeramicCoatingManchesterPage() {
     serviceSlug: "ceramic-coating",
     serviceDescription:
       "Professional SiO₂ ceramic coating in Manchester — hydrophobic, UV-resistant and scratch-resistant protection lasting 2–3 years. Full paint correction prep always included.",
-    priceFrom: 350,
+    priceFrom: 250,
     locationName: "Manchester",
     locationSlug: "manchester",
   });
@@ -189,7 +189,7 @@ export default function CeramicCoatingManchesterPage() {
                 </a>
               </div>
               <p className="mt-3 text-xs" style={{ color: "rgba(255,255,255,0.42)" }}>
-                From £350 · Fixed price confirmed before we start · Mobile across Greater Manchester
+                From £250 · Fixed price confirmed before we start · Mobile across Greater Manchester
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function CeramicCoatingManchesterPage() {
                   className="text-5xl font-black"
                   style={{ fontFamily: "var(--font-barlow-condensed)", fontWeight: 900, color: "white" }}
                 >
-                  £350
+                  £250
                 </div>
                 <p className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
                   Exact price depends on vehicle size and paint condition

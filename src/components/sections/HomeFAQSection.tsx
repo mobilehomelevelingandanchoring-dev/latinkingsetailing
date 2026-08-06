@@ -29,7 +29,7 @@ const FAQS = [
   {
     question: "How much does a mobile car wash or mini valet cost in Urmston?",
     answer:
-      "Our mobile car wash and mini valet service in Urmston starts from £40. A full valet starts from £80, a full car detail from £120, and ceramic coating from £350. Every price includes us coming to your home or workplace in Urmston (M41) or any covered area — no travel required. We confirm your exact quote before any work begins.",
+      "Our mobile car wash and mini valet service in Urmston starts from £40. A full valet starts from £80, a full car detail from £120, and ceramic coating from £250. Every price includes us coming to your home or workplace in Urmston (M41) or any covered area — no travel required. We confirm your exact quote before any work begins.",
   },
   {
     question: "Do you detail sports cars and exotic vehicles in Manchester?",

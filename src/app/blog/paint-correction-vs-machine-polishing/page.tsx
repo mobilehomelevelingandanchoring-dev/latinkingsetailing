@@ -47,7 +47,7 @@ const FAQS = [
   {
     question: "How much does paint correction cost in Manchester?",
     answer:
-      "Paint correction in Manchester starts from £200 at Latin King Detailing. Machine polishing (enhancement polish) starts from £150. The exact price depends on vehicle size, paint condition and the number of stages required. We assess the paint and provide a fixed quote before any work begins.",
+      "Paint correction in Manchester starts from £200 at Latin King Detailing. Machine polishing (enhancement polish) starts from £200. The exact price depends on vehicle size, paint condition and the number of stages required. We assess the paint and provide a fixed quote before any work begins.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function PaintCorrectionVsMachinePolishingPage() {
                       also: "Enhancement polish",
                       removes: "Mild swirls, light haze, minor oxidation",
                       adds: "Gloss, clarity, depth",
-                      price: "From £150",
+                      price: "From £200",
                       time: "4–8 hours",
                     },
                     {

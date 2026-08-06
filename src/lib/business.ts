@@ -125,7 +125,7 @@ export const BUSINESS = {
       tagline: "Restore depth, gloss and clarity to any paintwork",
       description:
         "Professional dual-action and rotary machine polishing to enhance paintwork gloss and clarity. Suitable for all paint types including delicate single-stage and matte-look finishes when used with the correct compound and speed combination.",
-      priceFrom: 150,
+      priceFrom: 200,
       duration: "4–8 hours",
       icon: "rotate-cw",
     },
@@ -136,7 +136,7 @@ export const BUSINESS = {
       tagline: "Lasting protection with a permanent liquid-glass shield",
       description:
         "Professional-grade SiO₂ ceramic coating bonds permanently to your paintwork, creating a hydrophobic, scratch-resistant barrier that keeps the car cleaner for longer and dramatically enhances gloss. Lasts up to 2–3 years with correct maintenance. We have experience coating vehicles from everyday hatchbacks to luxury exotics including the Ferrari Purosangue.",
-      priceFrom: 350,
+      priceFrom: 250,
       duration: "1–2 days",
       icon: "shield",
     },

@@ -9,12 +9,12 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Car Detailing Prices Manchester | Mobile Valeting & Ceramic Coating Costs | Latin King",
   description:
-    "Car detailing prices in Manchester — mini valet from £40, full detail from £120, paint correction from £200, ceramic coating from £350. Fixed quotes, no hidden costs. Call 07482 225323.",
+    "Car detailing prices in Manchester — mini valet from £40, full detail from £120, paint correction from £200, ceramic coating from £250. Fixed quotes, no hidden costs. Call 07482 225323.",
   alternates: { canonical: "/pricing" },
   openGraph: {
     title: "Car Detailing Prices Manchester | Latin King Detailing",
     description:
-      "Transparent car detailing prices in Manchester. Mini valet from £40 · Ceramic coating from £350 · All prices fixed before work starts.",
+      "Transparent car detailing prices in Manchester. Mini valet from £40 · Ceramic coating from £250 · All prices fixed before work starts.",
     type: "website",
     url: `${BUSINESS.url}/pricing`,
   },
@@ -124,7 +124,7 @@ const PRICE_TIERS = [
   {
     slug: "machine-polishing",
     name: "Machine Polishing / Paint Enhancement",
-    priceFrom: 150,
+    priceFrom: 200,
     duration: "4–8 hours",
     tagline: "Restore gloss and clarity",
     description:
@@ -191,7 +191,7 @@ const FAQS = [
   {
     question: "How much does ceramic coating cost in Manchester?",
     answer:
-      "Professional ceramic coating in Manchester starts from £350. The exact price depends on vehicle size and paint condition. Paint decontamination and machine polishing are always included in our ceramic coating packages.",
+      "Professional ceramic coating in Manchester starts from £250. The exact price depends on vehicle size and paint condition. Paint decontamination and machine polishing are always included in our ceramic coating packages.",
   },
   {
     question: "Do you charge extra for large vehicles?",

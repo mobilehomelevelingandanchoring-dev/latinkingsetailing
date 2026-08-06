@@ -23,7 +23,7 @@ const SERVICE_META: Record<string, { title: string; description: string }> = {
   "paint-correction": {
     title: "Paint Correction Manchester & Urmston | Swirl Mark Removal Near Me",
     description:
-      "Machine paint correction in Manchester & Urmston — permanently remove swirl marks, scratches & oxidation. Mobile service at your door. From £150. Call 07482 225323.",
+      "Machine paint correction in Manchester & Urmston — permanently remove swirl marks, scratches & oxidation. Mobile service at your door. From £200. Call 07482 225323.",
   },
   "machine-polishing": {
     title: "Machine Polishing Manchester | Car Polish Near Me | Latin King Detailing",
@@ -33,7 +33,7 @@ const SERVICE_META: Record<string, { title: string; description: string }> = {
   "ceramic-coating": {
     title: "Ceramic Coating Manchester | Best Ceramic Coating UK | Latin King Detailing",
     description:
-      "Best ceramic coating for cars in Manchester & Urmston — professional SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Includes paint correction prep. From £350. Book now.",
+      "Best ceramic coating for cars in Manchester & Urmston — professional SiO₂ nano-coating lasts 2–3 years, hydrophobic & UV-resistant. Includes paint correction prep. From £250. Book now.",
   },
   "interior-detailing": {
     title: "Interior Car Detailing Manchester | Car Seat Wash & Upholstery Clean Near Me",
