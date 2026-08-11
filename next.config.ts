@@ -21,6 +21,10 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Prevent large native-binary packages from being bundled into
+  // the Netlify server-handler function (keeps bundle under 250 MB).
+  serverExternalPackages: ["sharp", "exiftool-vendored", "@supabase/supabase-js"],
+
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [],
