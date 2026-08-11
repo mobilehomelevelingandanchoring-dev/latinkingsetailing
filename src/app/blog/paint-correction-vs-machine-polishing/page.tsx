@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, CheckCircle, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import { buildBreadcrumbSchema, buildFAQSchema, buildArticleSchema } from "@/lib/schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";

@@ -44,9 +44,12 @@ export const bookingSchema = z.object({
   phone: z
     .string()
     .min(1, "Phone number is required")
-    .regex(
-      /^(\+44\s?|0)7\d{9}$|^(\+44\s?|0)\d{10}$/,
-      "Enter a valid UK phone number (e.g. 07482 225323 or +44 7482 225323)"
+    .refine(
+      (v) => {
+        const digits = v.replace(/[\s\-().]/g, "").replace(/^\+44/, "0");
+        return /^07\d{9}$|^0\d{10}$/.test(digits);
+      },
+      { message: "Enter a valid UK phone number (e.g. 07482 225323)" }
     ),
   email: z
     .string()

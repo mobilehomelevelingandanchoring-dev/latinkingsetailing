@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, Phone, CheckCircle, Star, ArrowRight, Shield } from "lucide-react";
+import { MapPin, Phone, CheckCircle, Star, Shield } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import { buildLocalBusinessSchema, buildBreadcrumbSchema, buildFAQSchema, buildServiceLocationSchema } from "@/lib/schema";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";

@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION    = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Netlify's Essential Next.js integration handles:
+# - App Router server actions
+# - Server components
+# - API routes
+# - Middleware
+# - Image optimisation
+# - ISR / on-demand revalidation
+# Required: enable "Essential Next.js" integration in Netlify UI → Integrations
+
+[functions]
+  # Allow server actions and dynamic routes up to 26 seconds
+  # (Netlify free tier cap is 10s; Pro is 26s)
+  included_files = [".next/**"]
