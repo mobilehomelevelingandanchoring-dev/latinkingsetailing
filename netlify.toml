@@ -15,7 +15,3 @@
 # - ISR / on-demand revalidation
 # Required: enable "Essential Next.js" integration in Netlify UI → Integrations
 
-[functions]
-  # Allow server actions and dynamic routes up to 26 seconds
-  # (Netlify free tier cap is 10s; Pro is 26s)
-  included_files = [".next/**"]
